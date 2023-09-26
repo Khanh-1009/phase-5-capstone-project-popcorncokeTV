@@ -6,26 +6,26 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-NetWork.create([
-    {
-        name: "Apple Studios"
-    },
-    {
-        name: "Netflix"
-    }, 
-    {
-        name: "HBO"
-    },
-    {
-        name: "Paramount"
-    },
-    {
-        name: "Disney"
-    },
-    {
-        name: "NBC"
-    }
-])
+# Network.create([
+#     {
+#         name: "Apple Studios"
+#     },
+#     {
+#         name: "Netflix"
+#     }, 
+#     {
+#         name: "HBO"
+#     },
+#     {
+#         name: "Paramount"
+#     },
+#     {
+#         name: "Disney"
+#     },
+#     {
+#         name: "NBC"
+#     }
+# ])
 
 Show.create([
     {
@@ -199,7 +199,7 @@ Show.create([
         episodes: 129,
         genre: "Science Fantasy",
         year: 2007,
-        summary: "Phineas and Ferb is an American animated musical-comedy television series created by Dan Povenmire and Jeff "Swampy" Marsh which aired on Disney Channel and Disney XD for four seasons between August 2007 and June 2015. The series follows stepbrothers Phineas Flynn and Ferb Fletcher during summer vacation. Every day, the boys undertake the construction of a grand project, or embark on a spectacular adventure, to make the most of their time on vacation. This annoys their controlling older sister Candace, who frequently tries to expose their schemes to her and Phineas's mother. The series follows a standard plot system; running gags occur in every episode.
+        summary: "Phineas and Ferb is an American animated musical-comedy television series created by Dan Povenmire and Jeff Swampy Marsh which aired on Disney Channel and Disney XD for four seasons between August 2007 and June 2015. The series follows stepbrothers Phineas Flynn and Ferb Fletcher during summer vacation. Every day, the boys undertake the construction of a grand project, or embark on a spectacular adventure, to make the most of their time on vacation. This annoys their controlling older sister Candace, who frequently tries to expose their schemes to her and Phineas's mother. The series follows a standard plot system; running gags occur in every episode.
         Povenmire and Marsh conceived the characters while working together on animated programs The Simpsons and Rocko's Modern Life in the 1990s, and were inspired by the summers of their own childhoods. They developed the series together and pitched it to networks for 16 years before successfully selling the idea to The Walt Disney Company. ",
         poster_url: "https://m.media-amazon.com/images/M/MV5BMTc1NjcxNzg4MF5BMl5BanBnXkFtZTgwOTMzNzgyMDE@._V1_.jpg",
         network_id: 5
