@@ -32,4 +32,5 @@ class ReviewsController < ApplicationController
     def review_params
         params.permit(:subject, :rating, :review, :book_id)
     end
+    
 end

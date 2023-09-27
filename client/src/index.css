@@ -15,11 +15,11 @@ code {
 .app {
   margin: 0 auto;
   margin-top: 50px;
-  max-width: 1000px;
+  max-width: 1500px;
 }
 /*Header*/
 header {
-  background-color: rgb(88, 91, 91);
+  background-color: rgb(250, 250, 250);
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -27,9 +27,9 @@ header {
 }
 
 header h1 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin: 0;
-  color: rgb(255, 255, 255);
+  color: rgb(215, 43, 43);
   font-size: 3rem;
 }
 
@@ -80,4 +80,49 @@ header h1 {
   display: grid;
   gap: 16px;
   grid-template-columns: 200px 1fr;
+}
+
+.card {
+  text-align: center;
+  border: grey solid 1px;
+  padding: 1rem;
+  width: 15rem;
+  height: 20rem;
+  display: inline-grid;
+  margin: 2rem 2rem;
+  box-shadow: 3px 4px #e04b52;
+}
+.card h2 {
+  margin-top: 1px;
+}
+
+.fb-avatar {
+  justify-self: center;
+  height: 15rem;
+  width: 70%;
+}
+
+button {
+  position: relative;
+  background-color: #e04b52;
+  border: none;
+  border-radius: 5px;
+  height: 2rem;
+  width: max-content;
+  color: whitesmoke;
+  font-size: 18px;
+  justify-self: center;
+  margin-top: 6px;
+}
+
+.buttonContainer {
+  text-align: center;
+  padding: 1rem;
+}
+
+button:hover {
+  background-color: whitesmoke;
+  border: #e04b52 so
+  lid 1px;
+  color: #e04b52;
 }

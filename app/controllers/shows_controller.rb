@@ -23,6 +23,6 @@ class ShowsController < ApplicationController
 
     private
     def show_params
-        params.permit(:name, :seasons, :episodes, :genre, :year, :summary, :network_id)
+        params.permit(:name, :seasons, :episodes, :genre, :year, :summary, :poster_url, :network_id)
     end
 end

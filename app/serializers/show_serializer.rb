@@ -1,5 +1,5 @@
 class ShowSerializer < ActiveModel::Serializer
-  attributes :id, :name, :seasons, :episodes, :genre, :year, :summary, :network_id
+  attributes :id, :name, :seasons, :episodes, :genre, :year, :summary, :poster_url, :network_id
 
   belongs_to :network
   has_many :reviews 
