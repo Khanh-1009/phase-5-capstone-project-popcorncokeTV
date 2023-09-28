@@ -7,17 +7,27 @@ function Header() {
 
   return (
     <header>
-      <h1><i>Popcorn & Coke</i></h1>
+      <h1><b>Popcorn & Coke</b></h1>
       <div className="navlink">
         <NavLink 
           to="/" 
           style={({isActive}) => { return {
-            color: isActive ? "black" : "white",
-            background: isActive? "white" : "rgb(22, 23, 23)"
+            color: isActive ? "indigo" : "white",
+            background: isActive? "white" : "indigo"
           }}}
           className={({isActive}) => (isActive ? 'active' : 'link')}
           >
           Home
+        </NavLink>
+        <NavLink
+          to="/login" 
+          style={({isActive}) => { return {
+            color: isActive ? "indigo" : "white",
+            background: isActive? "white" : "indigo"
+          }}}
+          className={({isActive}) => (isActive ? 'active' : 'link')}
+          >
+          &#128100; Log In 
         </NavLink>
       </div>
     </header>

@@ -5,4 +5,8 @@ class Show < ApplicationRecord
     belongs_to :network
     has_many :reviews
     has_many :users, through: :reviews
+
+    def network_name
+        network.name
+    end
 end

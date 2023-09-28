@@ -19,7 +19,7 @@ code {
 }
 /*Header*/
 header {
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -27,9 +27,9 @@ header {
 }
 
 header h1 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Permanent Marker", cursive;
   margin: 0;
-  color: rgb(215, 43, 43);
+  color: deeppink;
   font-size: 3rem;
 }
 
@@ -90,21 +90,21 @@ header h1 {
   height: 20rem;
   display: inline-grid;
   margin: 2rem 2rem;
-  box-shadow: 3px 4px #e04b52;
+  box-shadow: 3px 4px rgb(224, 183, 252);
 }
 .card h2 {
   margin-top: 1px;
 }
 
-.fb-avatar {
+.show-avatar {
   justify-self: center;
   height: 15rem;
   width: 70%;
 }
 
-button {
+.show-button {
   position: relative;
-  background-color: #e04b52;
+  background-color: indigo;
   border: none;
   border-radius: 5px;
   height: 2rem;
@@ -115,14 +115,45 @@ button {
   margin-top: 6px;
 }
 
-.buttonContainer {
-  text-align: center;
-  padding: 1rem;
-}
-
-button:hover {
+.show-button:hover {
   background-color: whitesmoke;
   border: #e04b52 so
   lid 1px;
   color: #e04b52;
+}
+
+/*Each Show*/
+.each-show {
+  display: flex;
+  gap: 16px;
+  max-width: 1000px;
+  margin-top: 80px;
+  margin-inline: auto;
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
+  box-shadow: 5px 8px #b2b2b2;
+  border: grey solid 1px;
+}
+
+.each-show .poster {
+  flex: 0 0 350px;
+}
+
+.each-show .poster img {
+  width: 100%;
+}
+
+.showdetail {
+  flex: 1 1 250px;
+}
+
+.showdetail  h2 {
+  margin-top: 3;
+  margin-bottom: 12px;
+}
+
+.showdetail  p {
+  margin: 8px 0;
+  line-height: 1.4;
 }

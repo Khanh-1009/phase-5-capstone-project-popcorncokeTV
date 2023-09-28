@@ -8,8 +8,10 @@ function ShowList({show}) {
   return (
     <div className="card">
     <h2>{name}</h2>
-    <img src={poster_url} alt={name} className="fb-avatar"/>
-    <button className="drink-order">Watch Now</button>
+    <img src={poster_url} alt={name} className="show-avatar"/>
+    <Link to={`/shows/${id}`}>
+    <button className="show-button">Watch Now</button>
+    </Link>
     </div>
   );
 }
