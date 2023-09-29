@@ -60,7 +60,7 @@ function Login() {
         <br/>
         <button>Log In</button>
         <br/>
-        <p>You don't have an account? Please <Link to={'/signup'} style={{color: "white"}}>register</Link></p>
+        <p>You don't have an account? Please <Link to={'/signup'} style={{color: "black"}}>register</Link></p>
         {error.length > 0 && (
           <div>
             {error.map((error) => (

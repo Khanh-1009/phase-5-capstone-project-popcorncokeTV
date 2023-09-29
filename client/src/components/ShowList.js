@@ -2,7 +2,6 @@ import React from "react";
 import {Link} from "react-router-dom"
 
 function ShowList({show}) {
-  // const {name, seasons, episodes, genre, year, summary, poster_url, id} = show
   const {name, poster_url, id} = show
 
   return (

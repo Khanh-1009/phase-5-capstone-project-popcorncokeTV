@@ -70,7 +70,7 @@ function Signup() {
         <br/>
         <button>Sign Up</button>
         <br/>
-        <p>You might have created an account before? Please try to <Link to={'/login'} style={{color: "white"}}>sign in</Link></p>
+        <p>You might have created an account before? Please try to <Link to={'/login'} style={{color: "black"}}>sign in</Link></p>
         {errorsList.length > 0 && (
           <div>
             {errorsList.map((error) => (
