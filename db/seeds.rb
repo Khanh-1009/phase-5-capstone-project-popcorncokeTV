@@ -27,7 +27,7 @@
 #     }
 # ])
 
-Show.create([
+# Show.create([
     # {
     #     name: "The Crowded Room",
     #     seasons: 2,
@@ -72,17 +72,17 @@ Show.create([
     #     poster_url: "https://m.media-amazon.com/images/M/MV5BM2EwMmRhMmUtMzBmMS00ZDQ3LTg4OGEtNjlkODk3ZTMxMmJlXkEyXkFqcGdeQXVyMjM5ODk1NDU@._V1_.jpg",
     #     network_id: 2
     # },
-    {
-        name: "Ragnarok",
-        seasons: 3,
-        episodes: 18,
-        genre: "Fantasy",
-        year: 2020,
-        summary: "Ragnarok is a Norwegian fantasy drama television series reimagining of Norse mythology from Netflix. It takes place in the present-day fictional Norwegian town of Edda in Hordaland, which is plagued by climate change and industrial pollution caused by factories owned by the local Jutul family. The Jutuls are actually four Jötnar (supernatural beings) posing as a family.[4] They are challenged by Magne, a teenage boy who is surprised to learn that he is the reincarnation of Thor, the Norse god of thunder. He begins to fight against those who are destroying the town after his friend dies under mysterious circumstances. In the second season, he is joined by more people who embody other Norse gods.
-        The series premiered in January 2020, with a second season released in May 2021. It is Netflix's third Norwegian-language TV series, following Home for Christmas and Lilyhammer. The series is produced by the Danish production company SAM Productions.",
-        poster_url: "https://m.media-amazon.com/images/M/MV5BODM3NTZkZTUtYzEyYS00NjEyLTg2NjEtNDhlMjYwY2ZkNGUzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg",
-        network_id: 2
-    },
+    # {
+    #     name: "Ragnarok",
+    #     seasons: 3,
+    #     episodes: 18,
+    #     genre: "Fantasy",
+    #     year: 2020,
+    #     summary: "Ragnarok is a Norwegian fantasy drama television series reimagining of Norse mythology from Netflix. It takes place in the present-day fictional Norwegian town of Edda in Hordaland, which is plagued by climate change and industrial pollution caused by factories owned by the local Jutul family. The Jutuls are actually four Jötnar (supernatural beings) posing as a family.[4] They are challenged by Magne, a teenage boy who is surprised to learn that he is the reincarnation of Thor, the Norse god of thunder. He begins to fight against those who are destroying the town after his friend dies under mysterious circumstances. In the second season, he is joined by more people who embody other Norse gods.
+    #     The series premiered in January 2020, with a second season released in May 2021. It is Netflix's third Norwegian-language TV series, following Home for Christmas and Lilyhammer. The series is produced by the Danish production company SAM Productions.",
+    #     poster_url: "https://m.media-amazon.com/images/M/MV5BODM3NTZkZTUtYzEyYS00NjEyLTg2NjEtNDhlMjYwY2ZkNGUzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg",
+    #     network_id: 2
+    # },
     # {
     #     name: "Band of Brothers",
     #     seasons: 1,
@@ -95,17 +95,17 @@ Show.create([
     #     poster_url: "https://m.media-amazon.com/images/M/MV5BMTI3ODc2ODc0M15BMl5BanBnXkFtZTYwMjgzNjc3._V1_FMjpg_UX1000_.jpg",
     #     network_id: 3
     # },
-    {
-        name: "Chernobyl",
-        seasons: 1,
-        episodes: 5,
-        genre: "Historical Drama",
-        year: 2019,
-        summary: "Chernobyl is a 2019 historical drama television miniseries that revolves around the Chernobyl disaster of 1986 and the cleanup efforts that followed. The series was created and written by Craig Mazin and directed by Johan Renck. It features an ensemble cast led by Jared Harris, Stellan Skarsgård, Emily Watson, and Paul Ritter. The series was produced by HBO in the United States and Sky UK in the United Kingdom.
-        The five-part series premiered simultaneously in the United States on May 6, 2019, and in the United Kingdom on May 7. It received widespread critical acclaim for its cinematography, historical accuracy, performances, atmosphere, tone, screenplay, and musical score. At the 71st Primetime Emmy Awards, it received nineteen nominations and won for Outstanding Limited Series, Outstanding Directing, and Outstanding Writing, while Harris, Skarsgård, and Watson received acting nominations. At the 77th Golden Globe Awards, the series won for Best Miniseries or Television Film and Skarsgård won for Best Supporting Actor in a Series, Miniseries or Television Film.",
-        poster_url: "https://flxt.tmsimg.com/assets/p16695117_b_v10_ae.jpg",
-        network_id: 3
-    }
+    # {
+    #     name: "Chernobyl",
+    #     seasons: 1,
+    #     episodes: 5,
+    #     genre: "Historical Drama",
+    #     year: 2019,
+    #     summary: "Chernobyl is a 2019 historical drama television miniseries that revolves around the Chernobyl disaster of 1986 and the cleanup efforts that followed. The series was created and written by Craig Mazin and directed by Johan Renck. It features an ensemble cast led by Jared Harris, Stellan Skarsgård, Emily Watson, and Paul Ritter. The series was produced by HBO in the United States and Sky UK in the United Kingdom.
+    #     The five-part series premiered simultaneously in the United States on May 6, 2019, and in the United Kingdom on May 7. It received widespread critical acclaim for its cinematography, historical accuracy, performances, atmosphere, tone, screenplay, and musical score. At the 71st Primetime Emmy Awards, it received nineteen nominations and won for Outstanding Limited Series, Outstanding Directing, and Outstanding Writing, while Harris, Skarsgård, and Watson received acting nominations. At the 77th Golden Globe Awards, the series won for Best Miniseries or Television Film and Skarsgård won for Best Supporting Actor in a Series, Miniseries or Television Film.",
+    #     poster_url: "https://flxt.tmsimg.com/assets/p16695117_b_v10_ae.jpg",
+    #     network_id: 3
+    # }
     # {
     #     name: "House of the Dragon",
     #     seasons: 1,
@@ -271,4 +271,28 @@ Show.create([
     #     poster_url: "https://m.media-amazon.com/images/M/MV5BMTU1OTdjYTUtMzA2MS00Njg4LWI1NTctMWUzYzNkNmQ5YWY3XkEyXkFqcGdeQXVyMTUwMzM5ODkz._V1_FMjpg_UX1000_.jpg",
     #     network_id: 6
     # }
+# ])
+
+Review.create([
+    # {
+    #     subject: "My childhood favorite book turns into a great show",
+    #     review: "A story that I am never bored of watching and reading since I was a child until now that I'm 37. Anne taught me amazing truths about humanity, kindness, courage, the joy of Imagination, and overcoming unfair situations. I love you Anne with an E.",
+    #     rating: 5,
+    #     user_id: 1,
+    #     show_id: 3
+    # },
+    # {
+    #     subject: "Awesome Show",
+    #     review: "As a Canadian, this show is amazing. Amybeth is the closest Anne that I can imagine. Great Work!",
+    #     rating: 4,
+    #     user_id: 2,
+    #     show_id: 3
+    # },
+    {
+        subject: "Not Anne of Green Gables",
+        review: "There were a lot of components in the show that didn't follow the original story line at all. Seriously, Gilbert's dad died and Gilbert traveled to Trinidad? Billy is a toxic bully? Where does it mention that in the original? Who’s Cole? Who’s Ka’kwet? Who’s Bash? Who's Winifred?THERE ARE SO MANY ADDED CHARACTERS TO PROMOTE THEIR AGENDA AND PROVE A POINT that it doesn't even feel like Anne of Green Gables anymore.",
+        rating: 1,
+        user_id: 3,
+        show_id: 3
+    }
 ])

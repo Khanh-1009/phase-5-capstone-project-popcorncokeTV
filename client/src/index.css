@@ -85,24 +85,30 @@ header h1 {
   grid-template-columns: 200px 1fr;
 }
 
+/*Show Cards*/
 .card {
   text-align: center;
   border: grey solid 1px;
   padding: 1rem;
   width: 15rem;
-  height: 20rem;
+  height: 22rem;
   display: inline-grid;
   margin: 2rem 2rem;
   box-shadow: 3px 4px rgb(224, 183, 252);
 }
 .card h2 {
   margin-top: 1px;
+  margin-bottom: 6px;
 }
 
 .show-avatar {
   justify-self: center;
   height: 15rem;
   width: 70%;
+}
+
+.card p {
+  margin-bottom: 10px;
 }
 
 .show-button {
@@ -115,14 +121,14 @@ header h1 {
   color: whitesmoke;
   font-size: 18px;
   justify-self: center;
-  margin-top: 6px;
+  margin-top: 0.1px;
 }
 
 .show-button:hover {
   background-color: whitesmoke;
-  border: #e04b52 so
+  border: rgb(169, 109, 211) so
   lid 1px;
-  color: #e04b52;
+  color:rgb(169, 109, 211);
 }
 
 /*Each Show*/
@@ -159,6 +165,109 @@ header h1 {
 .showdetail  p {
   margin: 8px 0;
   line-height: 1.4;
+}
+
+/*Review part*/
+/*Review Form*/
+.review-form {
+  max-width: 1000px;
+  margin-top: 40px;
+  margin-inline: auto;
+}
+
+.review-form h2{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.review-form input {
+  margin: 0.15rem ;
+  max-width: 100%;
+  width: 45%;
+  font-size: 1rem;
+  line-height: 1.5;
+  box-shadow: 1px 2px #b2b2b2;
+  border-radius: 3px;
+  border: 1px solid;
+}
+
+.review-form textarea {
+  margin: 0.15rem ;
+  max-width: 100%;
+  width: 45%;
+  font-size: 1rem;
+  height: 120px;
+  line-height: 1.5;
+  box-shadow: 1px 2px #b2b2b2;
+  border-radius: 3px;
+  border: 1px solid;
+}
+
+.review-form label {
+  margin: 0.20rem ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.15rem;
+  font-style: bold;
+  size: 18;
+}
+
+.review-form button {
+  margin: 0.5rem ;
+  width: 15%;
+  background-color: indigo;
+  border: none;
+  border-radius: 5px;
+  height: 2rem;
+  color: whitesmoke;
+  font-size: 18px;
+  justify-self: center;
+}
+
+/*Audience Reviews*/
+#audience-reviews{
+  max-width: 1000px;
+  margin-top: 40px;
+  margin-inline: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.show-review {
+  max-width: 1000px;
+  margin-top: 40px;
+  margin-inline: auto;
+}
+
+.each-review {
+  max-width: 1000px;
+  margin-top: 40px;
+  width: 60%;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  box-shadow: 2px 4px #b2b2b2;
+  border: grey solid 1px;
+}
+
+.each-review h3 {
+  margin: 7px auto;
+  margin-left: 10px;
+}
+
+.each-review p {
+  margin: 10px auto;
+  margin-left: 10px;
+}
+
+.btn {
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 2px;
+  background-color: indigo;
+  border: none;
+  border-radius: 5px;
+  height: 1.5rem;
+  color: whitesmoke;
+  font-size: 14px;
+  width: 15%;
 }
 
 /*Signup-Login form*/

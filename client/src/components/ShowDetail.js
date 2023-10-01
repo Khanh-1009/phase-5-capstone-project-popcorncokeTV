@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import ReviewForm from "./ReviewForm";
+import Reviews from "./Reviews";
 
 function ShowDetail({shows}){
     const [currentShow, setCurrentShow] = useState({reviews: []})
@@ -15,10 +17,10 @@ function ShowDetail({shows}){
 
     return (
         <div>
-            <div className="each-show">
-                <div className="poster">
-                    <img src={currentShow.poster_url} alt={currentShow.name + " Poster"} />
-                </div>
+          <div className="each-show">
+            <div className="poster">
+              <img src={currentShow.poster_url} alt={currentShow.name + " Poster"} />
+            </div>
             <div className="showdetail">
               <h2>{currentShow.name}</h2>
               <p>
@@ -31,6 +33,11 @@ function ShowDetail({shows}){
             <p>{currentShow.summary}</p>
           </div>
       </div>
+      <ReviewForm />
+      <h2 id="audience-reviews">Audience Reviews</h2>
+      {currentShow.reviews.map((showReview) => (
+        <Reviews key={showReview.id} showReview={showReview} />
+      ))}
     </div>
     )
 
