@@ -10,8 +10,12 @@ class Show < ApplicationRecord
         network.name
     end
 
+    def reviews_count
+        reviews.count 
+    end
+
     def average_rating
         all_rates = reviews.map {|review| review.rating}
-        (all_rates.sum / all_rates.length).to_f
+        all_rates.sum
     end
 end

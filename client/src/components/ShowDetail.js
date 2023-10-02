@@ -34,7 +34,7 @@ function ShowDetail({shows}){
           </div>
       </div>
       <ReviewForm />
-      <h2 id="audience-reviews">Audience Reviews</h2>
+      <h2 id="audience-reviews">Audience Reviews ({currentShow.reviews_count})</h2>
       {currentShow.reviews.map((showReview) => (
         <Reviews key={showReview.id} showReview={showReview} />
       ))}
