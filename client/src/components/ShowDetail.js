@@ -24,6 +24,26 @@ function ShowDetail(){
       setShows(updatedShowAfterAddedReview)
     }
 
+    function handleDeleteReview(removeReview){
+      const updateAfterRemove = currentShow.reviews.filter((review) => review.id !== removeReview.id)
+      currentShow.reviews = updateAfterRemove
+      const updatedShowAfterRemoveReview = shows.map((show) => show.id === currentShow.show_id ? currentShow : show)
+      setShows(updatedShowAfterRemoveReview)
+    }
+  
+    function handleChangeReview(updatedReview){
+      const updateReviewOfShow = currentShow.reviews.map((review) => {
+        if (review.id === updatedReview.id){
+          return updatedReview
+        } else {
+          return review
+        }
+      })
+      currentShow.reviews = updateReviewOfShow
+      const updatedShowAfterEditReview = shows.map(show => show.id === currentShow.show_id ? currentShow : show)
+      setShows(updatedShowAfterEditReview)
+    }
+
     return (
         <div>
           <div className="each-show">
@@ -45,7 +65,9 @@ function ShowDetail(){
       <ReviewForm onAddReview={handleAddReview}/>
       <h2 id="audience-reviews">Audience Reviews ({currentShow.reviews_count})</h2>
       {currentShow.reviews.map((showReview) => (
-        <Reviews key={showReview.id} showReview={showReview} />
+        <Reviews key={showReview.id} showReview={showReview} 
+        onChangeReview={handleChangeReview}
+        onDeleteReview={handleDeleteReview}/>
       ))}
     </div>
     )
