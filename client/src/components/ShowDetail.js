@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
+import { ShowContext } from "../shows";
 import { useParams } from "react-router-dom";
 import ReviewForm from "./ReviewForm";
 import Reviews from "./Reviews";
 
-function ShowDetail({shows}){
+function ShowDetail(){
+    const {shows, setShows} = useContext(ShowContext)
     const [currentShow, setCurrentShow] = useState({reviews: []})
     const params = useParams()
     const showID = parseInt(params.id)
@@ -14,6 +16,13 @@ function ShowDetail({shows}){
             setCurrentShow(chosenShow)
         }
     }, [shows])
+
+    function handleAddReview(newReview){
+      const addNewReview = [newReview, ...currentShow.reviews]
+      currentShow.reviews = addNewReview
+      const updatedShowAfterAddedReview = shows.map(show => show.id === currentShow.show_id ? currentShow : show)
+      setShows(updatedShowAfterAddedReview)
+    }
 
     return (
         <div>
@@ -33,7 +42,7 @@ function ShowDetail({shows}){
             <p>{currentShow.summary}</p>
           </div>
       </div>
-      <ReviewForm />
+      <ReviewForm onAddReview={handleAddReview}/>
       <h2 id="audience-reviews">Audience Reviews ({currentShow.reviews_count})</h2>
       {currentShow.reviews.map((showReview) => (
         <Reviews key={showReview.id} showReview={showReview} />

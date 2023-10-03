@@ -1,13 +1,11 @@
 import React from "react";
-import ShowList from "./ShowList";
 
-function Home({shows}) {
+
+function Home() {
 
     return (
       <div className="app">
-        {shows.map((show) => (
-          <ShowList key={show.id} show={show}/>
-        ))}
+        <h1>Home</h1>
       </div>
     );
 }

@@ -32,6 +32,16 @@ function Header() {
           Home
         </NavLink>
         <NavLink 
+          to="/shows" 
+          style={({isActive}) => { return {
+            color: isActive ? "white" : "indigo",
+            background: isActive? "indigo" : "white"
+          }}}
+          className={({isActive}) => (isActive ? 'active' : 'link')}
+          >
+          All Shows
+        </NavLink>
+        <NavLink 
           to="/networks" 
           style={({isActive}) => { return {
             color: isActive ? "white" : "indigo",
