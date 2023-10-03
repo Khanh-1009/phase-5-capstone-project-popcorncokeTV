@@ -273,7 +273,7 @@
     # }
 # ])
 
-Review.create([
+# Review.create([
     # {
     #     subject: "My childhood favorite book turns into a great show",
     #     review: "A story that I am never bored of watching and reading since I was a child until now that I'm 37. Anne taught me amazing truths about humanity, kindness, courage, the joy of Imagination, and overcoming unfair situations. I love you Anne with an E.",
@@ -288,11 +288,439 @@ Review.create([
     #     user_id: 2,
     #     show_id: 3
     # },
-    {
-        subject: "Not Anne of Green Gables",
-        review: "There were a lot of components in the show that didn't follow the original story line at all. Seriously, Gilbert's dad died and Gilbert traveled to Trinidad? Billy is a toxic bully? Where does it mention that in the original? Who’s Cole? Who’s Ka’kwet? Who’s Bash? Who's Winifred?THERE ARE SO MANY ADDED CHARACTERS TO PROMOTE THEIR AGENDA AND PROVE A POINT that it doesn't even feel like Anne of Green Gables anymore.",
-        rating: 1,
-        user_id: 3,
-        show_id: 3
-    }
-])
+    # {
+    #     subject: "Not Anne of Green Gables",
+    #     review: "There were a lot of components in the show that didn't follow the original story line at all. Seriously, Gilbert's dad died and Gilbert traveled to Trinidad? Billy is a toxic bully? Where does it mention that in the original? Who’s Cole? Who’s Ka’kwet? Who’s Bash? Who's Winifred?THERE ARE SO MANY ADDED CHARACTERS TO PROMOTE THEIR AGENDA AND PROVE A POINT that it doesn't even feel like Anne of Green Gables anymore.",
+    #     rating: 1,
+    #     user_id: 3,
+    #     show_id: 3
+    # },
+#   {
+#         subject: "Love this show!!",
+#         review: "This show is so good, I'm loving it so much. The acting is great all around, especially Tom as Danny. The intro is so well done with the art that keeps shifting, it always draws me in and sets the mood for the show. The pace is entertaining, interesting and nice to me. I love that they show Danny's childhood and they paint a clear picture of his trauma without having to show too much, yet it still makes such a big impact.",
+#         rating: 4,
+#         user_id: 21,
+#         show_id: 1
+#     },
+#     {
+#         subject: "Not for me!",
+#         review: "When there is still so much misunderstanding and stigma around mental illness, it is so disheartening to watch a series which only fuels this.   Multiple personality disorder is not a credibile mental illness.    The horrible book Sybil sensationalized the faux condition and now The Crowded Room has capitalized on it and in doing so gives it credence.",
+#         rating: 2,
+#         user_id: 17,
+#         show_id: 1
+#     },
+#     {
+#         subject: "Good actors, but not the show",
+#         review: "We usually start to feel the love for a series by the second episode.  However given that chance this series couldn't make the grade. Tom Holland felt hollow. His character too slow to develop and his co stars felt like fast times at Ridgefield High.Seyfield couldn't save it.and she didn't fit in this role in our opinion. Sadly we stopped watching.",
+#         rating: 1,
+#         user_id: 16,
+#         show_id: 1
+#     },
+#     {
+#         subject: "Absolutely stunning",
+#         review: "To be honest I wasn't even aware of Tom Holland but since watching this series I cannot watch enough of this brilliant young actor. What horrified me more than the terrible abuse this Billy Milligan faced was the bad critic that Tom had from his portrayal.",
+#         rating: 5,
+#         user_id: 6,
+#         show_id: 1
+#     },
+#     {
+#         subject: "Urrhh, this show is really...",
+#         review: "Apple's Foundation left the door wide open for a gifted production team to recreate a memorable series based upon the work of Asimov, to do it justice. I want to see a smart film based on the books.  Sad to see the heart of Isaac's keen narrative and insight whittled away so completely, a disappointment not too far away from watching a Star Trek's Strange New Worlds episode condon violent vigilante justice ",
+#         rating: 1,
+#         user_id: 12,
+#         show_id: 2
+#     },
+#     {
+#         subject: "Will turn it off in 5 mins",
+#         review: "The problem here is the demand to have a grabbing plot twist at the end of every hour, and seven days to wait for the next episode to provide very little in the way of answers.  The only thing remaining from the original books is the series title and a few character names: everything else is new and makes little sense and never gets a real answer.",
+#         rating: 1,
+#         user_id: 4,
+#         show_id: 2
+#     },
+#     {
+#         subject: "Not that bad!",
+#         review: "More like Star Trek meets Star Wars than the foundation. 
+#         Still found it entertaining and for about half an episode I was still really excited. What it isn't is an exploration of the evolution of history as the driving force of factors beyond normal human powers where everyone is playing a part as the product of their times. The true roles of religion, politics, science and mass groups of humans.",
+#         rating: 3,
+#         user_id: 14,
+#         show_id: 2
+#     },
+#     {
+#         subject: "One of the best",
+#         review: "One of the finest Series of a brilliant little mind! This seven-episode series is a remarkable blend of compelling storytelling, outstanding performances, and stunning cinematography. It seamlessly weaves together themes of determination, genius, addiction, and personal growth, resulting in a truly unforgettable viewing experience.",
+#         rating: 5,
+#         user_id: 5,
+#         show_id: 4
+#     },
+#     {
+#         subject: "Amazing...",
+#         review: "An undemanding yet utterly absorbing mini series from double Oscar-winning writer Scott Frank that tells the story of a female orphan (Anna Taylor-Joy) who grows up to be one of the world's greatest chess players.",
+#         rating: 4,
+#         user_id: 5,
+#         show_id: 4
+#     },
+#     {
+#         subject: "Good one!",
+#         review: "One of the finest Series of a brilliant little mind! This seven-episode series is a remarkable blend of compelling storytelling, outstanding performances, and stunning cinematography. It seamlessly weaves together themes of determination, genius, addiction, and personal growth, resulting in a truly unforgettable viewing experience.",
+#         rating: 5,
+#         user_id: 10,
+#         show_id: 4
+#     },
+#     {
+#         subject: "Highly recommended",
+#         review: "The acting in this series in spot-on, with major kudos to Anya for her impeccable performance, as always. The stylistic direction is rather superb, with wonderful soundtrack selections and gorgeous cinematography.",
+#         rating: 5,
+#         user_id: 18,
+#         show_id: 4
+#     },
+#     {
+#         subject: "You will like it!",
+#         review: "Glad that Netflix has brought another beautiful series with storytelling totally based on the inner space conflicts rather than the outer space world. Give it a go! ",
+#         rating: 4,
+#         user_id: 22,
+#         show_id: 4
+#     },
+#     {
+#         subject: "Must watch",
+#         review: "One of the best series/documentaries out there. Steven Spielberg and Tom Hanks, as well as every person involved in the amazing production made me cry every time I watched an episode. I encountered this series on YouTube.",
+#         rating: 5,
+#         user_id: 11,
+#         show_id: 6
+#     },
+#     {
+#         subject: "Great work",
+#         review: "Quite possibly the best mini-series of all time (currently).  So many male actors got so much exposure from this production that many came out of it with great careers after and became household names.",
+#         rating: 4,
+#         user_id: 19,
+#         show_id: 6
+#     },
+#     {
+#         subject: "Waste your time!",
+#         review: "Where do I begin, I can't even begin to fathom nor comprehend how this show has such good reviews unless 99 percent of the viewers are either mentally challenged or they were paid to give it praise. I had to agonisingly force my self through this soulless drivel and I was already done with it about 25 minutes into episode 1",
+#         rating: 1,
+#         user_id: 8,
+#         show_id: 8
+#     },
+#     {
+#         subject: "Ok... but?!?",
+#         review: "This show is… meh. It's not terrible, but doesn't hook you like Game of Thrones. The last season of Game of Thrones was terrible (except for the beautiful dragon CGI, but I’ll get to that later), but the seasons before were masterpieces, genuinely some of the best television ever made. But this? This is just mediocre.",
+#         rating: 2,
+#         user_id: 9,
+#         show_id: 8
+#     },
+#     {
+#         subject: "Good for me",
+#         review: "For a series titled “House of the Dragon,” there was precious little of them in the premiere of HBO’s new prequel series to Game of Thrones tonight. While I mostly enjoyed this pilot, I found that it dragged on in many places, losing my interest. It felt like “Game of Thrones Light!” ",
+#         rating: 4,
+#         user_id: 8,
+#         show_id: 8
+#     },
+#     {
+#         subject: "Love it, love it!!",
+#         review: "Dynamic, vivid, hilarious, dark, and emotional where it needs to be. 
+#         The perfect balance of comedy, drama, and suspense. 
+#         Not to mention the beautiful and clever camera work. Sometimes I was laughing just at the way a scene was shot, for all the best reasons of course.",
+#         rating: 5,
+#         user_id: 15,
+#         show_id: 9
+#     },
+#     {
+#         subject: "You will not regret",
+#         review: "I'm not super easy to please and whenever I'm watching a show I'm always wondering what I’m going to watch next, but while watching Barry I was just hoping that the show would go on. Barry never disappointed in it’s action, comedy, acting, or anything else.",
+#         rating: 4,
+#         user_id: 20,
+#         show_id: 9
+#     },
+#     {
+#         subject: "Acceptable!",
+#         review: "Special Ops: Lioness is a spy thriller series about a US Marine who is tasked with befriending the daughter of a suspected terrorist who is being surveilled by the Central Intelligence Agency.",
+#         rating: 3,
+#         user_id: 15,
+#         show_id: 10
+#     },
+#     {
+#         subject: "Not for me",
+#         review: "2 stars for blatant and low IQ propaganda. All the broad tropes from the past 30 years of war and govt human rights abuses, condensed in trademark Sheridan child abuse , porn, gratuitous violence and misogyny, expressed here in 101 bionic woman fantasy.",
+#         rating: 2,
+#         user_id: 1,
+#         show_id: 10
+#     },
+#     {
+#         subject: "Enjoyed it so much",
+#         review: "I have watched almost every great series ever produced. I stumbled upon this one two days ago and I cannot stop watching it. Initially, it comes across as a bit cheesy but swiftly changes and grabs your total attention. I have only watched two episodes but I am THRILLED with this show. Like, BREAKING BAD thrilled.",
+#         rating: 5,
+#         user_id: 16,
+#         show_id: 11
+#     },
+#     {
+#         subject: "Not great, not bad",
+#         review: "Three stars, nothing more, nothing less. It’s just entertaining and nuisanced enough to keep my attention episode to episode, but its many flaws weigh it down throughout. Most notably, Shauna is an uneven character who is intended to be some dualistic protagonist we all can’t help but to root for but who is, in reality, just downright irrational and unlikeable.",
+#         rating: 5,
+#         user_id: 12,
+#         show_id: 11
+#     },
+#     {
+#         subject: "Stay away from this one",
+#         review: "Tired of shows with girl/girl, guy/guy. This show is so woke. Just saying what I think alot of people are thinking, and I know I will get attacked by the lgbt crowd and the woke crowd, but the reality is that 90% of us or more are straight, stop shoving it down our throats, our kids throats, and our second graders throats. ",
+#         rating: 1,
+#         user_id: 2,
+#         show_id: 12
+#     },
+#     {
+#         subject: "Not recommended",
+#         review: "Is the sex necessary? Enough if the showing more than needed especially with a younger audience. I grew up watching Buffy Vampire Slayer and it was better without having all that nonsense, so yes I am in the older audience category so what . Is it really needed ? The making out, language. Same sex scenes..Over the top. Especially when there is a younger audience.  BE CREATIVE WITHOUT all the sexual content and language. ",
+#         rating: 2,
+#         user_id: 6,
+#         show_id: 12
+#     },
+#     {
+#         subject: "Awesome Show!",
+#         review: "I find this show undeniably entertaining, and while I would not hesitate to recommend it, I have some thoughts about this show which will seem less than complimentary. With that being said, I don't think my criticisms mean it is a bad show, or not worth watching -take that for what you will.",
+#         rating: 5,
+#         user_id: 4,
+#         show_id: 13
+#     },
+#     {
+#         subject: "Love it, love it!!",
+#         review: "Fascinating show, definitely worth my time. Cutting edge entertainment, unpredictable plot events unfolding, and A+ acting. This series is cleverly written, with carefully crafted character development revealing numerous secrets and surprises. So grateful it has many seasons.",
+#         rating: 5,
+#         user_id: 10,
+#         show_id: 13
+#     },
+#     {
+#         subject: "Good but not that great",
+#         review: "I like the show, but I feel like it has been overrated. Don't get me wrong, I still enjoyed it, but can be improved.",
+#         rating: 3,
+#         user_id: 19,
+#         show_id: 13
+#     },
+#     {
+#         subject: "My favorite!",
+#         review: "This was one of the greatest Disney Channel shows I've ever grown up with and I can't stop watching it on Disney Plus, both me and my sister loved this show growing up and nothing would make us happier than having it back on Disney Channel again. ",
+#         rating: 4,
+#         user_id: 15,
+#         show_id: 14
+#     },
+#     {
+#         subject: "Love it, really!",
+#         review: "Good Luck Charlie= happiness. How is that you ask? Well, let me tell you. This show deserves to be carved into Mount Rushmore because it did more for me than any of those dudes did. The chaotic storyline is humorous, creative, and mysterious, as you wonder if Mrs. Dabney really did kill her husband. ",
+#         rating: 5,
+#         user_id: 5,
+#         show_id: 14
+#     },
+#     {
+#         subject: "My favorite childhood show",
+#         review: "This show is AMAZING!! I tried watching it once when I was younger (maybe 8 or 9 years old) when it first came out on Disney+ and I didn't really understand it, so I stopped after a few episodes. A few years later my older sister (who watched it when it first came out) convinced me to watch it again, and now I love it!! ",
+#         rating: 5,
+#         user_id: 15,
+#         show_id: 15
+#     },
+#     {
+#         subject: "My kids and I love it",
+#         review: "the truth is riley's world is something that nobody can explain it is impossible to explain something as wonderful as that seire for me it is not just a series it is my life this series changed my thinking this series changed me into something incredible I would like you to do more than this series please director.",
+#         rating: 4,
+#         user_id: 9,
+#         show_id: 15
+#     },
+#     {
+#         subject: "So funny...",
+#         review: "Simply one of the best and greatest Animated Shows of all time. FUN FACT: Did you know that the success of Phineas and Ferb paved way to the creation of your other favorite shows like Gravity Falls, Star Vs, etc.?",
+#         rating: 4,
+#         user_id: 3,
+#         show_id: 16
+#     },
+#     {
+#         subject: "For your family",
+#         review: "Phineas and Ferb is a fun, creative, intelligent, entertaining, well-done, and amazing experience for kids and adults, alike. The show is mostly great because it introduces high-concept sci-fi elements such as quantum mechanics and temporal paradoxes in a way that kids can understand.",
+#         rating: 5,
+#         user_id: 22,
+#         show_id: 16
+#     },
+#     {
+#         subject: "Very Charming and Cute",
+#         review: "It may be repetitive buts it very charming. I love the music and the characters are just adorable. I grew up watching this show and it’s still as good now that I have Disney+. I love the heart the show has and how creative it is.",
+#         rating: 4,
+#         user_id: 15,
+#         show_id: 16
+#     },
+#     {
+#         subject: "Nice show",
+#         review: "I watch all four seasons of Austin and Ally in Disney Plus and I have to say it keeps remind me of my childhood memory when I first started watching this show and to see how this has grown from this point. The storyline was still great and all the characters play amazing.",
+#         rating: 4,
+#         user_id: 13,
+#         show_id: 17
+#     },
+#     {
+#         subject: "Good for everyone",
+#         review: "Loved the show so much! It was way less cringey as a child but it’s still enjoyable now even being a teenager. Although I took me some time to get adjusted to Ally’s character she was accutaly pretty cool at the end!",
+#         rating: 5,
+#         user_id: 18,
+#         show_id: 17
+#     },
+#     {
+#         subject: "For Med Students",
+#         review: "Love this show. As a nurse myself, I find myself often relating back to this show and always mirroring their techniques. One thing I will say is that before even choosing the route of my career, Chicago med had heavily impacted my decision. Highly recommend to those wanting to go into medicine.",
+#         rating: 4,
+#         user_id: 7,
+#         show_id: 19
+#     },
+#     {
+#         subject: "Errr...",
+#         review: "This show is a dramatic as it is entertaining, I'll give it that- but it's absolutely, utterly, terrible. It checks all the boxes- homophobic, misogynistic, racist, ableist- in the most irritating ways.",
+#         rating: 2,
+#         user_id: 11,
+#         show_id: 19
+#     },
+#     {
+#         subject: "Just OK!",
+#         review: "Quite possibly the most unlikeable cast of characters I've ever had the misfortune of watching. I can't connect with them at all, and feel nothing for them when there's something that should get me crying or happy.",
+#         rating: 2,
+#         user_id: 20,
+#         show_id: 19
+#     },
+#     {
+#         subject: "Most terrible show everrrrr!",
+#         review: "Wow!  I could spend a lot time trying to come up with the right words to describe just how bad this show is.  As well, I believe it would take way too much overhauling to untie the knot episode 1 created (unless, of course, they went with the old 'just kidding.....it was all a bad dream' excuse!)  It's definitely true, NBC is pretty much the only network television station left where you can view 'quality' TV series.",
+#         rating: 1,
+#         user_id: 1,
+#         show_id: 20
+#     },
+#     {
+#         subject: "0 star if I can",
+#         review: "This show is a mess. I can give it nothing if possible. Believe me, you can stand for even one single ep. Check something else I really mean it.",
+#         rating: 1,
+#         user_id: 16,
+#         show_id: 20
+#     },
+#     {
+#         subject: "Unbelievable, so many bad comments",
+#         review: "I'm giving this a 4 start rating based on the 1st episode only, its still very new with a lot of mystery and no doubt answers will come, La Brea has a strong Lost vibe combined with shows like Terra Nova and Primeval. I wouldn't agree with other google reviews that is the same as manifest, with Manifest you have no idea what's going on but in La-Brea by the end of the first episode its pretty clear what's happened to the people. ",
+#         rating: 4,
+#         user_id: 8,
+#         show_id: 20
+#     },
+#     {
+#         subject: "Oh oh no thanks",
+#         review: "Too many issues but let me name some(maybe spoilers) 
+
+#         1.After 2 seasons everyone is still fresh and clean try find dirt on anyone it's impossible. 
+#         2.They guys weed vape's batteries are infinite lasting a season and a half
+#         3.Levi is in the military yet he brings a pistol with no extra ammo,
+#         4. They had 3 guns and they all magically disappeared",
+#         rating: 2,
+#         user_id: 10,
+#         show_id: 20
+#     },
+#     {
+#         subject: "Amazing show",
+#         review: "I must admit, when my friends couldn't stop raving about This Is Us, I was skeptical. How could any TV show live up to such immense hype? However, from the very first episode, I realized that the praise and suggestions were not mere exaggerations.",
+#         rating: 5,
+#         user_id: 6,
+#         show_id: 21
+#     },
+#     {
+#         subject: "A must watch show",
+#         review: "I really loved this show! I think Mandy and Milo's acting is just amazing, they seem a couple in real life! and I am a huge fan of the big 3 adventures. Baby Randall is so sweet and Randall's real granpa is such a great actor, I miss him a lot in the show, I just loved his poems and jazz quotations. ",
+#         rating: 4,
+#         user_id: 18,
+#         show_id: 21
+#     },
+#     {
+#         subject: "Good... but uhmm",
+#         review: "I just want to say, I have enjoyed this show. Until tonight, when they named the sins of our fathers upon us. I am sorry that our parents thought their priorities were income, housing, savings, then family. it was out of necessity.",
+#         rating: 3,
+#         user_id: 22,
+#         show_id: 21
+#     },  
+#       {
+#     subject: "Great Work, NBC",
+#     review: "I fell in love with the show when it first started.I love the plot of the series that it is about family.It's one of those shows that you want to come back to either catch up from the beginning or watch it to the end.",
+#     rating: 5,
+#     user_id: 11,
+#     show_id: 21
+#       }
+#     {
+#         subject: "One of the best show",
+#         review: "The Best Crime Drama on TV!
+#         I was reluctant to watch “The Blacklist” when I first heard about it, in fear of the series acting like any other generic FBI based crime show. Once I finally did watch the first episode, I was proven wrong and hooked within minutes. “The Blacklist” is undeniably one of the best crime dramas on TV.",
+#         rating: 5,
+#         user_id: 3,
+#         show_id: 22
+#     },
+#     {
+#         subject: "BEST BEST BEST!!",
+#         review: "THE BEST SHOW I HAVE EVER WATCH
+#         THE BEST SERIES I HAVE EVER WATCH
+#         RAYMOND REDDINGTION IS MY BEST CHARACTER TOO
+#         I normally don't write reviews but this show I can't hold my mind because it's the best series I have ever watch",
+#         rating: 5,
+#         user_id: 13,
+#         show_id: 22
+#     },
+#     {
+#         subject: "Will give it 10 if I can",
+#         review: "For whatever reason I waited until the show hit season 7 to start watching it on Netflix; although people raved about the show, idk, it felt like I almost had to convince myself to start watching the “Blacklist”, as I thought I just would not like it..... BOY WAS I really, REALLY WRONG!! Not ONLY do I like it, I LOVE IT & I AM BEYOND SOOOOO ADDICTED TO IT! There are so many reasons why this show LITERALLY one of IF NOT THE VERY BEST shows I’ve EVER WATCHED... Seriously EVER!! First off- JAMES Spader- HATS OFF TO YOU SIR and STANDING OVATIONS ALL AROUND..... You Sir are truly BEYOND BRILLIANT! ",
+#         rating: 5,
+#         user_id: 21,
+#         show_id: 22
+#     },
+#     {
+#         subject: "Maybe I'm a picky audience",
+#         review: "I enjoy James Spader's acting,  and this memorable eccentric character, but the plots of some of these episodes would embarrass a teenager writing comic books. 
+#         The skeleton key episode with the magic MacGuffin that can control every piece of technology in the world was simply beyond stupid.",
+#         rating: 3,
+#         user_id: 15,
+#         show_id: 22
+#     },
+#     {
+#         subject: "You will not be disapointed!!",
+#         review: "I have just finished the last episode of the show and it was absolutely a jaw dropping experience. To start off I believe every actor played a well balanced too brilliant performance. From side characters like Erik, Isolde, and Gry, to even the main Characters like Magne and even Fjor.",
+#         rating: 4,
+#         user_id: 20,
+#         show_id: 23
+#     },
+#     {
+#         subject: "Not impressed at all",
+#         review: "This show is just ok.  I like the set-up with Norse mythology and modern times but the execution, especially the writing,  is far from perfect.  A few people have already mentioned that there are few likeable characters, which is true. ",
+#         rating: 2,
+#         user_id: 15,
+#         show_id: 23
+#     },
+#     {
+#         subject: "Not outstanding but good to me",
+#         review: "Ragnarok is well worth the watch if you are at all interested in the most accurate depiction of Norse mythology. Told by the people who know more about it than anyone else, this is not Americanized or have the polish of Hollywood effects or acting and therefore quite some unfair reviews.",
+#         rating: 4,
+#         user_id: 9,
+#         show_id: 23
+#     },
+#     {
+#         subject: "Heartbreaking drama",
+#         review: "This was a breathtaking dramatisation of  the horrors and chaos following a nuclear power plant disaster. It was 6 hours spanned over 5 weeks and compulsive viewing. Every programme in this series rattled my conscience in a way that few have in the past. Like so many people, I thought I had a fairly good idea of what happened following this nuclear power plant tragedy in 1986. But, on reflection, after watching this series, I realize I didn't.",
+#         rating: 5,
+#         user_id: 3,
+#         show_id: 24
+#     },
+#     {
+#         subject: "Really Amazing",
+#         review: "HBO has developed an arsenal when it comes to mini-series. Created for the small screen by Craig Mazin and loosely based on accounts from the book 'Voices of Chernobyl by Svetlana Alexievich', the show chronicles the behind-the-scenes drama and horror of the infamous 1986 disaster at the Chernobyl Nuclear Power Plant in Ukraine. - Tom Shackleford, Live for Live Music",
+#         rating: 5,
+#         user_id: 5,
+#         show_id: 24
+#     },
+#     {
+#         subject: "Watched several times",
+#         review: "Outstanding in every possible way.
+#         Terrifying depiction of how the first impulse of authoritarian governments faced with disaster is to cover up and lie as much as they can for as long as they can.
+#         Superb acting from EVERYBODY from the starring roles to single line/single scene moments. ",
+#         rating: 5,
+#         user_id: 14,
+#         show_id: 24
+#     },
+#     {
+#         subject: "Good but too much political stuff",
+#         review: "The drama is great, but they should focus more on the scientific impact not the political perspective. What the show describle how the Soviet solved the problem was really ridiculous.",
+#         rating: 3,
+#         user_id: 19,
+#         show_id: 24
+#     }
+# ])

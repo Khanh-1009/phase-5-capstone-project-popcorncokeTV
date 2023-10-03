@@ -16,6 +16,6 @@ class Show < ApplicationRecord
 
     def average_rating
         all_rates = reviews.map {|review| review.rating}
-        all_rates.sum
+        (all_rates.sum / all_rates.length).to_f
     end
 end

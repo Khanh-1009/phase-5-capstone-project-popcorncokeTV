@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :networks
   resources :shows
   resources :reviews
+  resources :users
   
   get "*path", to: "fallback#index", constraints: ->(req) { !req.xhr? && req.format.html? }
 end
