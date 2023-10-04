@@ -14,14 +14,7 @@ import ShowsPage from './ShowsPage';
 
 
 function App() {
-  const [shows, setShows] = useState([])
   const [networks, setNetworks] = useState([])
-
-  useEffect(() => {
-    fetch("/shows")
-    .then(res => res.json())
-    .then(data => setShows(data))
-  }, [])
 
   useEffect(() => {
     fetch("/networks")

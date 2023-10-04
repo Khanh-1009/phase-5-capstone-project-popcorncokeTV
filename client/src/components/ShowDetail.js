@@ -1,11 +1,14 @@
 import React, { useEffect, useState, useContext } from "react";
 import { ShowContext } from "../shows";
+import {UserContext} from '../user';
 import { useParams } from "react-router-dom";
 import ReviewForm from "./ReviewForm";
 import Reviews from "./Reviews";
+import {Link} from "react-router-dom"
 
 function ShowDetail(){
     const {shows, setShows} = useContext(ShowContext)
+    const {user} = useContext(UserContext)
     const [currentShow, setCurrentShow] = useState({reviews: []})
     const params = useParams()
     const showID = parseInt(params.id)
