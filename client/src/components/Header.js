@@ -1,6 +1,7 @@
 import React, {useContext} from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { UserContext } from "../user";
+import {Link} from "react-router-dom"
 
 function Header() {
   const {user, logout} = useContext(UserContext)
