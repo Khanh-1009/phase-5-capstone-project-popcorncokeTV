@@ -19,14 +19,16 @@ function Reviews ({showReview, onChangeReview, onDeleteReview}){
     }
 
     function handleDeleteReview(){
-        fetch(`/reviews/${id}`, {
-            method: "DELETE",
-        })
-        .then(res => {
-            if (res.ok) {
-                onDeleteReview(showReview)
-            }
-        })
+        if (window.confirm("Do you really want to delete this post?")) {
+            fetch(`/reviews/${id}`, {
+                method: "DELETE",
+            })
+            .then(res => {
+                if (res.ok) {
+                    onDeleteReview(showReview)
+                }
+            })
+        }
     }
 
      if (user.id === user_id) {

@@ -20,7 +20,7 @@ function Header() {
 
   return (
     <header>
-      <h1><b>Popcorn & Coke</b></h1>
+      <Link to={'/'} style={{textDecoration: 'none'}}><h1><b>Popcorn & Coke</b></h1></Link>
       <div className="navlink">
         <NavLink 
           to="/" 

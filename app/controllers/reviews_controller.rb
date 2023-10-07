@@ -23,6 +23,7 @@ class ReviewsController < ApplicationController
         head :no_content
     end
 
+
     private
 
     def current_user

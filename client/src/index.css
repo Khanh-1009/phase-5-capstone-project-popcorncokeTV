@@ -17,6 +17,39 @@ code {
   margin-top: 50px;
   max-width: 1500px;
 }
+
+/*Home Page*/
+.home{
+  text-align: center;
+  margin-top: 10rem;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive;
+  background-color: rgb(210, 175, 232);
+}
+
+.logo {
+  font-size: 2.5rem;
+}
+
+#get-start {
+  margin: 0.5rem ;
+  width: 14%;
+  background-color: deeppink;
+  border: none;
+  border-radius: 5px;
+  height: 2rem;
+  color: whitesmoke;
+  font-size: 18px;
+  justify-self: center;
+}
+
+#get-start:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+  border: deeppink so
+  lid 1px;
+  color:deeppink;
+}
 /*Header*/
 header {
   background-color: rgb(255, 255, 255);
@@ -90,7 +123,7 @@ header h1 {
   text-align: center;
   border: grey solid 1px;
   padding: 1rem;
-  width: 15rem;
+  width: 15.7rem;
   height: 22rem;
   display: inline-grid;
   margin: 2rem 2rem;
