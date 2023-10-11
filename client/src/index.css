@@ -126,7 +126,7 @@ header h1 {
   width: 15.7rem;
   height: 22rem;
   display: inline-grid;
-  margin: 2rem 2rem;
+  margin: 2rem 2.3rem;
   box-shadow: 3px 4px rgb(224, 183, 252);
 }
 .card h2 {
@@ -162,6 +162,49 @@ header h1 {
   border: rgb(169, 109, 211) so
   lid 1px;
   color:rgb(169, 109, 211);
+}
+
+/*Filter Section*/
+.search {
+  padding: 3rem 5rem;
+  margin: 2rem 2rem;
+  background-color: rgb(210, 175, 232);
+  
+}
+
+.search form {
+  display: flex;
+  justify-content: center;
+  width: 96%
+}
+
+.search input {
+  margin-right: 2rem;
+  line-height: 2;
+  height: 2rem;
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+.search select {
+  width: 200px;
+  margin-right: 2rem;
+  line-height: 1.5;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.search button {
+  width: 130px;
+  background-color: deeppink;
+  border: none;
+  border-radius: 5px;
+  height: 2rem;
+  color: whitesmoke;
+  font-size: 18px;
 }
 
 /*Each Show*/
@@ -243,9 +286,9 @@ header h1 {
   size: 18;
 }
 
-.review-form button {
+.post {
   margin: 0.5rem ;
-  width: 15%;
+  width: 13%;
   background-color: indigo;
   border: none;
   border-radius: 5px;
@@ -253,6 +296,27 @@ header h1 {
   color: whitesmoke;
   font-size: 18px;
   justify-self: center;
+  cursor: pointer;
+}
+
+.cancel {
+  margin: 0.5rem ;
+  width: 13%;
+  background-color: rgb(226, 209, 237);
+  border: none;
+  border-radius: 5px;
+  height: 2rem;
+  color: whitesmoke;
+  font-size: 18px;
+  justify-self: center;
+  cursor: pointer;
+}
+
+.cancel:hover {
+  background-color: indigo;
+  border: rgb(169, 109, 211) so
+  lid 1px;
+  color:whitesmoke;
 }
 
 /*Audience Reviews*/

@@ -6,6 +6,7 @@ function Network({networks}) {
 
     return (
         <div className="app">
+          <h1>Special Thanks To Our Partners</h1>
         {networks.map((network) => (
           <NetworkList id={network.id} name={network.name}/>
         ))}

@@ -19,6 +19,14 @@ function ReviewEdit ({showReview, onUpdateReview}){
         setEditReview(e.target.value)
     }
 
+    function handleCancelAddReview(){
+        if (window.confirm("Do you want to discard this change?")){
+            setEditSubject(subject)
+            setEditRating(rating)
+            setEditReview(review)
+        }
+    }
+
     function handleUpdateReview(e){
         e.preventDefault()
         fetch(`/reviews/${id}`, {
@@ -72,7 +80,8 @@ function ReviewEdit ({showReview, onUpdateReview}){
                     onChange={handleChangeNewReview}
                 />
                 <br/>
-                <button>Save</button>
+                <button className="post">Save</button>
+                <button className="cancel" onClick={handleCancelAddReview}>Cancel</button>
                 {errors.length > 0 && (
                 <div>
                 {errors.map((error) => (

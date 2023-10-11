@@ -32,7 +32,15 @@ function Signup() {
           navigate('/')
         })
       } else {
-        res.json().then((err) => setErrorsList(err.errors))
+        res.json().then((err) => {
+          setErrorsList(err.errors)
+          setTimeout(() => {
+            setErrorsList([])
+            setUsername("")
+            setPassword("")
+            setPasswordConfirmation("")
+          }, 4000)
+        })
       }
     })
   }

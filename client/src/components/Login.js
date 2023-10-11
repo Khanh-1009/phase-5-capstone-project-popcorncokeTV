@@ -31,7 +31,14 @@ function Login() {
           navigate('/')
         })
       } else {
-        res.json().then((err) => setError(err.errors))
+        res.json().then((err) => {
+          setError(err.errors)
+          setTimeout(() => {
+            setError([])
+            setUsername("")
+            setPassword("")
+          }, 4000)
+        })
       }
     })
   }

@@ -21,6 +21,13 @@ function ReviewForm ({onAddReview}){
         setReview(e.target.value)
     }
 
+    function handleCancelAddReview(){
+        setErrors([])
+        setSubject("")
+        setRate(1)
+        setReview("")
+    }
+
     function handleSubmit(e){
         e.preventDefault()
         fetch("/reviews", {
@@ -45,7 +52,12 @@ function ReviewForm ({onAddReview}){
                     setReview("")
                 })
             } else {
-                res.json().then((err) => setErrors(err.errors))
+                res.json().then((err) => {
+                    setErrors(err.errors)
+                    setTimeout(() => {
+                        setErrors([])
+                    }, 3500)
+                })
             }
         })
     }
@@ -80,15 +92,17 @@ function ReviewForm ({onAddReview}){
                     onChange={handleReviewChange}
                 />
                 <br/>
-                <button>Post</button>
+                <button className="post">Post</button>
+                <button className="cancel" onClick={handleCancelAddReview}>Cancel</button>
                 {errors.length > 0 && (
                 <div>
                 {errors.map((error) => (
-                <ul className="error-review" key={error}><span>!</span>{error}</ul>
-                 ))}
+                    <ul className="error-review" key={error}><span>!</span>{error}</ul>
+                ))}
                 </div>
                 )}
            </form>
+           
         </div>
     )
 
