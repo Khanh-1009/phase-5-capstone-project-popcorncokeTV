@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 // import '../App.css';
 import Header from './Header';
 import { Route, Routes } from 'react-router-dom'
 import { UserProvider } from '../user';
 import { ShowsProvider } from '../shows';
+import { NetworksProvider } from '../networks';
 import Home from './Home';
 import Network from './Network';
 import ShowDetail from './ShowDetail';
@@ -14,29 +15,25 @@ import ShowsPage from './ShowsPage';
 
 
 function App() {
-  const [networks, setNetworks] = useState([])
 
-  useEffect(() => {
-    fetch("/networks")
-    .then(res => res.json())
-    .then(data => setNetworks(data))
-  }, [])
 
   return (
     <div>
       <UserProvider>
+      <NetworksProvider>
       <ShowsProvider>
         <Header />
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/shows" element={<ShowsPage />} />
           <Route path="/shows/:id" element={<ShowDetail />} />
-          <Route path="/networks" element={<Network networks={networks}/>} />
-          <Route path="/networks/:id" element={<NetworkDetail networks={networks} />} />
+          <Route path="/networks" element={<Network />} />
+          <Route path="/networks/:id" element={<NetworkDetail />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} /> 
         </Routes>
-        </ShowsProvider>
+      </ShowsProvider>
+      </NetworksProvider>
       </UserProvider>
     </div>
   );

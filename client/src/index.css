@@ -461,3 +461,49 @@ header h1 {
   display: grid;
   place-content: center;
 }
+
+/*Network parts*/
+/*Network list*/
+.network-list {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem 1rem;
+}
+.network-card {
+  justify-content: center;
+  border: grey transparent 1px;
+  padding: 0.2rem;
+  width: 9rem;
+  height: 5rem;
+  display: inline-flex;
+  margin: 2rem 2rem;
+}
+.network-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*Each Network*/
+.each-network {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem 1rem;
+}
+
+.each-network img {
+  justify-content: center;
+  border: grey transparent 1px;
+  padding: 0.2rem;
+  width: 19rem;
+  height: 15rem;
+  display: inline-flex;
+  margin: 2rem 2rem;
+}
+
+.each-network p {
+  font-size: 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 3rem;
+  color: rgb(105, 105, 105);
+}

@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
-import ShowList from "./ShowList";
+import { NetworkContext } from "../networks";
 
-function NetworkDetail({networks}){
+function NetworkDetail(){
+    const {networks} = useContext(NetworkContext)
     const [currentNetwork, setCurrentNetwork] = useState({shows: []})
     const params = useParams()
     const networkID = parseInt(params.id)
@@ -14,14 +15,13 @@ function NetworkDetail({networks}){
         }
     }, [networks])
 
-
     return (
         <div className="app">
-            {currentNetwork.shows.map((allShow) => (
-                <ShowList id={allShow.id} show={allShow}/>
-            ))}
+        <div className="each-network">
+            <img src={currentNetwork.logo_url} alt={currentNetwork.name} />
+            <p>{currentNetwork.info}</p>
         </div>
-        
+        </div>
     )
 
 }
