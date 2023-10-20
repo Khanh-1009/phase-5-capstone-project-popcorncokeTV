@@ -12,6 +12,7 @@ import Signup from './Signup';
 import Login from './Login';
 import NetworkDetail from './NetworkDetail';
 import ShowsPage from './ShowsPage';
+import Profile from './Profile';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/networks/:id" element={<NetworkDetail />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} /> 
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </ShowsProvider>
       </NetworksProvider>

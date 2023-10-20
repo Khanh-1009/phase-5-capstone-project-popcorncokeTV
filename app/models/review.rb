@@ -8,4 +8,8 @@ class Review < ApplicationRecord
     def username 
         user.username
     end
+
+    def user_avatar
+        user.image 
+    end
 end

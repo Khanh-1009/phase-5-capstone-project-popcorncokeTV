@@ -9,17 +9,19 @@ function Signup() {
   const [errorsList, setErrorsList] = useState([])
   const {signup} = useContext(UserContext)
   const navigate = useNavigate()
+  const [avatarData, setAvatarData] = useState([])
 
   function handleSubmit(e){
     e.preventDefault()
+    const formData = new FormData()
+    formData.append('username', username)
+    formData.append('password', password)
+    formData.append('password_confirmation', passwordConfirmation)
+    formData.append('image', avatarData)
+
     fetch('/signup', {
       method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({
-        username: username,
-        password: password,
-        password_confirmation: passwordConfirmation
-      })
+      body: formData
     })
     .then((res) => {
       if (res.ok){
@@ -28,6 +30,7 @@ function Signup() {
           setUsername("")
           setPassword("")
           setPasswordConfirmation("")
+          setAvatarData([])
           alert('Thanks for signing up! Enjoy and share your experience with us!')
           navigate('/')
         })
@@ -39,6 +42,7 @@ function Signup() {
             setUsername("")
             setPassword("")
             setPasswordConfirmation("")
+            setAvatarData([])
           }, 4000)
         })
       }
@@ -74,6 +78,16 @@ function Signup() {
           id="password_confirmation"
           value={passwordConfirmation}
           onChange={(e) => setPasswordConfirmation(e.target.value)}
+        />
+        <br/>
+        <label>Avatar Photo <span>(optional)</span></label>
+        <input
+          type="file"
+          accept="/image/*"
+          name="image"
+          id="avatar-photo"
+          value={undefined}
+          onChange={(e) => setAvatarData(e.target.files[0])}
         />
         <br/>
         <button>Sign Up</button>

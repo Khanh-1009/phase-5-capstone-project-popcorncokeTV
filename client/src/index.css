@@ -97,7 +97,7 @@ header h1 {
   border: 1.5px solid indigo;
 }
 
-.logout-btn {
+/* .logout-btn {
   width: fit-content;
   font-size: 16px;
   padding: 17px 15px 9px 15px;
@@ -106,7 +106,7 @@ header h1 {
   border-radius: 8px;
   color: white;
   background: indigo;
-}
+} */
 
 .main {
   max-width: 1000px;
@@ -506,4 +506,47 @@ header h1 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 3rem;
   color: rgb(105, 105, 105);
+}
+
+/*Personal Avatar*/
+#personal-avatar {
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.3rem;
+
+  /* border: grey solid 1px; */
+}  
+#default-avatar {
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.3rem;
+}
+
+/*Profile*/
+.profile {
+  gap: 16px;
+  max-width: 600px;
+  /* margin-top: 80px; */
+  margin-inline: auto;
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
+  box-shadow: 5px 8px #b2b2b2;
+  border: grey solid 1px;
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive;
+}
+.profile img {
+  justify-content: center;
+  border: grey transparent 1px;
+  padding: 0.2rem;
+  width: 18rem;
+  height: 18rem;
+  display: inline-flex;
+  margin: 1rem 2rem 0.5rem;
+  box-shadow: 1px 3px #b2b2b2;
+  border: grey solid 1px;
+  border-radius: 50%;
 }
