@@ -25,8 +25,12 @@ function UserProvider({children}){
         setUser(newUser)
     }
 
+    function handleUpdatePhoto(avatarUpdated){
+        setUser(avatarUpdated)
+    }
+
     return (
-        <UserContext.Provider value={{user, login, logout, signup}}>
+        <UserContext.Provider value={{user, login, logout, signup, handleUpdatePhoto}}>
             {children}
         </UserContext.Provider>
     )

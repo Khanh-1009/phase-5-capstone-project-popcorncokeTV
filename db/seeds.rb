@@ -6,26 +6,38 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# Network.create([
-#     {
-#         name: "Apple Studios"
-#     },
-#     {
-#         name: "Netflix"
-#     }, 
-#     {
-#         name: "HBO"
-#     },
-#     {
-#         name: "Paramount"
-#     },
-#     {
-#         name: "Disney"
-#     },
-#     {
-#         name: "NBC"
-#     }
-# ])
+Network.create([
+    {
+        name: "Apple Studios",
+        logo_url: "https://logowik.com/content/uploads/images/apple-tv-plus8550.jpg",
+        info: "We are proud to work with Apple Studios to bring you the best shows from Apple TV+. Apple TV+ is a streaming service from Apple. It features exclusive Apple Original shows and movies from some of the industry's top talent, with new premieres arriving each month. New releases are added each month that you can browse in the Apple TV app or Apple TV's partners. You will find hits from Apple TV and share thems with your family."
+    },
+    {
+        name: "Netflix",
+        logo_url: "https://static.vecteezy.com/system/resources/previews/020/336/373/original/netflix-logo-netflix-icon-free-free-vector.jpg",
+        info: "Being Netfix's partner since 2015, we are aware that this is one of the most popular networks with millions views every month. Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices. Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles."
+    }, 
+    {
+        name: "HBO",
+        logo_url: "https://1000logos.net/wp-content/uploads/2021/02/HBO-logo.jpg",
+        info: "HBO is home to the most exciting shows and films, from groundbreaking series and documentaries to the biggest blockbuster movies. In the United States, there are many ways to watch your favorite HBO shows and films, including the HBO channel, HBO on Demand, and Max, which includes all of HBO, plus even more amazing shows and films. Besides, HBO also has several partners, so you can also enjoy HBO shows through our partners' websites. HBO also operates seven 24-hour networks on traditional pay television, including HBO Family, HBO Comedy, and HBO Latino. View our TV schedule to see what’s airing now."
+    },
+    {
+        name: "Paramount",
+        logo_url: "https://logowik.com/content/uploads/images/paramount-global6695.logowik.com.webp",
+        info: "If you are a fan of Paramount movies, this is your website. Paramount Network is a premium entertainment destination that pushes the limits of storytelling with bold scripted and non-scripted series. Inspired by over a century of cinema, Paramount Network is where today's brightest stars bring the experience of the big screen to every screen with stories that are immersive, inclusive and deeply personal. Paramount Network is the home of Yellowstone, Bar Rescue, Lip Sync Battle, Ink Master and more. We are proud to provide you the best shows from the Paramount."
+    },
+    {
+        name: "Disney",
+        logo_url: "https://logowik.com/content/uploads/images/disney-channel4160.logowik.com.webp",
+        info: "Disney Channel should not be missed. We have grown up with all great Disney movies such as the Lion King, Beauty and the beast, etc. From new releases to classics, there’s something for everyone. Stream The Little Mermaid (2023), Elemental, Ahsoka, Avatar, The Simpsons, and more on Disney+. Your children would love to enjoy these shows in the weekend, and you can also find your favorite shows from it. Popcorn and Coke can also recommend you the newest shows from Disney Channel."
+    },
+    {
+        name: "NBC",
+        logo_url: "https://media.designrush.com/inspiration_images/137154/conversions/_1526668075_207_NBC-Logo-Design_680a7b0fd386-mobile.jpg",
+        info: "(NBC) is an American English-language commercial broadcast television and radio network. The flagship property of the NBC Entertainment division of NBCUniversal, a subsidiary of Comcast, its headquarters are located at Comcast Building in New York City. The company also has offices in Los Angeles at 10 Universal City Plaza and Chicago at the NBC Tower. NBC is the oldest of the traditional 'Big Three' American television networks, having been founded in 1926 by the Radio Corporation of America. NBC is sometimes referred to as the Peacock Network , in reference to its stylized peacock logo, introduced in 1956 to promote the company's innovations in early color broadcasting."
+    }
+])
 
 # Show.create([
     # {
@@ -724,3 +736,4 @@
 #         show_id: 24
 #     }
 # ])
+
