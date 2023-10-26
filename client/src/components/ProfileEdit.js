@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 function ProfileEdit ({user, onEditPhoto}){
     const {username, image, id} = user
-    const [avatarUpdate, setAvatarUpdate] = useState(null)
+    const [avatarUpdate, setAvatarUpdate] = useState(image)
     console.log(id)
 
     function handleChangeAvatar(e){

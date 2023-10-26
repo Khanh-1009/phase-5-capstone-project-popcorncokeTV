@@ -21,13 +21,6 @@ function ReviewForm ({onAddReview}){
         setReview(e.target.value)
     }
 
-    function handleCancelAddReview(){
-        setErrors([])
-        setSubject("")
-        setRate(1)
-        setReview("")
-    }
-
     function handleSubmit(e){
         e.preventDefault()
         fetch("/reviews", {
@@ -93,7 +86,6 @@ function ReviewForm ({onAddReview}){
                 />
                 <br/>
                 <button className="post">Post</button>
-                <button className="cancel" onClick={handleCancelAddReview}>Cancel</button>
                 {errors.length > 0 && (
                 <div>
                 {errors.map((error) => (

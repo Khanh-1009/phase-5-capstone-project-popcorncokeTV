@@ -74,7 +74,7 @@ function Header() {
           >
           &#128100; Log In 
         </NavLink>) : (<NavLink onClick={handleLogoutClick}>
-          {user.image === null ? <img src={defaultAvatar} alt="defaul-avatar" id="default-avatar"/> : <img src={user.image} id="personal-avatar"/>} {user.username}, Log Out</NavLink>)  
+        <img src={user.image} id="personal-avatar"/> {user.username}, Log Out</NavLink>)  
         }
 
       </div>

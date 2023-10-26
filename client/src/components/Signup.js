@@ -9,7 +9,7 @@ function Signup() {
   const [errorsList, setErrorsList] = useState([])
   const {signup} = useContext(UserContext)
   const navigate = useNavigate()
-  const [avatarData, setAvatarData] = useState([])
+  const [avatarData, setAvatarData] = useState(null)
 
   function handleSubmit(e){
     e.preventDefault()
