@@ -737,114 +737,114 @@ Review.create([
     }
 ])
 
-# user3 = User.create ({
-#         username: "PapaXiqiao",
-#         password: "user3",
-#         password_confirmation: "user3"
-# })
-# user3.image.attach( io: File.open(Rails.root.join('db/images/xiqiao.png')),
-# filename: 'xiqiao.png')
+user3 = User.create ({
+        username: "PapaXiqiao",
+        password: "user3",
+        password_confirmation: "user3"
+})
+user3.image.attach( io: File.open(Rails.root.join('db/images/xiqiao.png')),
+filename: 'xiqiao.png')
 
-# user4 = User.create ({
-#         username: "JayDes14xx",
-#         password: "user4",
-#         password_confirmation: "user4"
-# })
-# user4.image.attach( io: File.open(Rails.root.join('db/images/jay.png')),
-# filename: 'jay.png')
+user4 = User.create ({
+        username: "JayDes14xx",
+        password: "user4",
+        password_confirmation: "user4"
+})
+user4.image.attach( io: File.open(Rails.root.join('db/images/jay.png')),
+filename: 'jay.png')
 
-# user5 = User.create ({
-#         username: "JosieMerfield9610",
-#         password: "user5",
-#         password_confirmation: "user5"
-# })
-# user5.image.attach( io: File.open(Rails.root.join('db/images/josephine.png')),
-# filename: 'josephine.png')
+user5 = User.create ({
+        username: "JosieMerfield9610",
+        password: "user5",
+        password_confirmation: "user5"
+})
+user5.image.attach( io: File.open(Rails.root.join('db/images/josephine.png')),
+filename: 'josephine.png')
 
-# user6 = User.create ({
-#         username: "VitoPontilo",
-#         password: "user6",
-#         password_confirmation: "user6"
-# })
-# user6.image.attach( io: File.open(Rails.root.join('db/images/vito.png')),
-# filename: 'vito.png')
+user6 = User.create ({
+        username: "VitoPontilo",
+        password: "user6",
+        password_confirmation: "user6"
+})
+user6.image.attach( io: File.open(Rails.root.join('db/images/vito.png')),
+filename: 'vito.png')
 
-# user7 = User.create ({
-#         username: "QuinVu",
-#         password: "user7",
-#         password_confirmation: "user7"
-# })
-# user7.image.attach( io: File.open(Rails.root.join('db/images/khuyen.png')),
-# filename: 'khuyen.png')
+user7 = User.create ({
+        username: "QuinVu",
+        password: "user7",
+        password_confirmation: "user7"
+})
+user7.image.attach( io: File.open(Rails.root.join('db/images/khuyen.png')),
+filename: 'khuyen.png')
 
-# user8 = User.create ({
-#         username: "ChauTran0912",
-#         password: "user8",
-#         password_confirmation: "user8"
-# })
-# user8.image.attach( io: File.open(Rails.root.join('db/images/chau.png')),
-# filename: 'chau.png')
+user8 = User.create ({
+        username: "ChauTran0912",
+        password: "user8",
+        password_confirmation: "user8"
+})
+user8.image.attach( io: File.open(Rails.root.join('db/images/chau.png')),
+filename: 'chau.png')
 
-# user9 = User.create ({
-#         username: "RusselA9x",
-#         password: "user9",
-#         password_confirmation: "user9"
-# })
-# user9.image.attach( io: File.open(Rails.root.join('db/images/russell.png')),
-# filename: 'russell.png')
+user9 = User.create ({
+        username: "RusselA9x",
+        password: "user9",
+        password_confirmation: "user9"
+})
+user9.image.attach( io: File.open(Rails.root.join('db/images/russell.png')),
+filename: 'russell.png')
 
-# user10 = User.create ({
-#         username: "Nishikado",
-#         password: "user10",
-#         password_confirmation: "user10"
-# })
-# user10.image.attach( io: File.open(Rails.root.join('db/images/nishikado.png')),
-# filename: 'nishikado.png')
+user10 = User.create ({
+        username: "Nishikado",
+        password: "user10",
+        password_confirmation: "user10"
+})
+user10.image.attach( io: File.open(Rails.root.join('db/images/nishikado.png')),
+filename: 'nishikado.png')
 
-# user11 = User.create ({
-#         username: "JunHee_sister",
-#         password: "user11",
-#         password_confirmation: "user11"
-# })
-# user11.image.attach( io: File.open(Rails.root.join('db/images/junhee.png')),
-# filename: 'junhee.png')
+user11 = User.create ({
+        username: "JunHee_sister",
+        password: "user11",
+        password_confirmation: "user11"
+})
+user11.image.attach( io: File.open(Rails.root.join('db/images/junhee.png')),
+filename: 'junhee.png')
 
-# user12 = User.create ({
-#         username: "Ben_W#60",
-#         password: "user12",
-#         password_confirmation: "user12"
-# })
-# user12.image.attach( io: File.open(Rails.root.join('db/images/ben.png')),
-# filename: 'ben.png')
+user12 = User.create ({
+        username: "Ben_W#60",
+        password: "user12",
+        password_confirmation: "user12"
+})
+user12.image.attach( io: File.open(Rails.root.join('db/images/ben.png')),
+filename: 'ben.png')
 
-# user13 = User.create ({
-#         username: "KimTaeHee",
-#         password: "user13",
-#         password_confirmation: "user13"
-# })
-# user13.image.attach( io: File.open(Rails.root.join('db/images/taehee.png')),
-# filename: 'taehee.png')
+user13 = User.create ({
+        username: "KimTaeHee",
+        password: "user13",
+        password_confirmation: "user13"
+})
+user13.image.attach( io: File.open(Rails.root.join('db/images/taehee.png')),
+filename: 'taehee.png')
 
-# user14 = User.create ({
-#         username: "MichelleObama",
-#         password: "user14",
-#         password_confirmation: "user14"
-# })
-# user14.image.attach( io: File.open(Rails.root.join('db/images/michelle.png')),
-# filename: 'michelle.png')
+user14 = User.create ({
+        username: "MichelleObama",
+        password: "user14",
+        password_confirmation: "user14"
+})
+user14.image.attach( io: File.open(Rails.root.join('db/images/michelle.png')),
+filename: 'michelle.png')
 
-# user15 = User.create ({
-#         username: "TomCruise",
-#         password: "user15",
-#         password_confirmation: "user15"
-# })
-# user15.image.attach( io: File.open(Rails.root.join('db/images/tom.png')),
-# filename: 'tom.png')
+user15 = User.create ({
+        username: "TomCruise",
+        password: "user15",
+        password_confirmation: "user15"
+})
+user15.image.attach( io: File.open(Rails.root.join('db/images/tom.png')),
+filename: 'tom.png')
 
-# user16 = User.create ({
-#         username: "Ken",
-#         password: "user16",
-#         password_confirmation: "user16"
-# })
-# user16.image.attach( io: File.open(Rails.root.join('db/images/ken.png')),
-# filename: 'ken.png')
+user16 = User.create ({
+        username: "Ken",
+        password: "user16",
+        password_confirmation: "user16"
+})
+user16.image.attach( io: File.open(Rails.root.join('db/images/ken.png')),
+filename: 'ken.png')

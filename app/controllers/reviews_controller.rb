@@ -1,5 +1,4 @@
 class ReviewsController < ApplicationController
-    skip_before_action :authorize
     # the index method won't be used because the reviews will be fetched along with the books, but I have it here for full CRUD in this model.
     def index
         reviews = Review.all 

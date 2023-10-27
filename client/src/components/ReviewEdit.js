@@ -46,7 +46,11 @@ function ReviewEdit ({showReview, onUpdateReview}){
                     onUpdateReview(updatedReview)
                 })
             } else {
-                res.json().then((err) => setErrors(err.errors))
+                res.json().then((err) => {
+                    setErrors(err.errors)
+                    setTimeout(() => {
+                        setErrors([])
+                    }, 3500)})
             }
         })
     }

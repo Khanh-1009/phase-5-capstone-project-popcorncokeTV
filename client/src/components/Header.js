@@ -9,6 +9,7 @@ function Header() {
   console.log(user)
 
   function handleLogoutClick(){
+    if (window.confirm("Do you want to log out?")) {
     fetch('/logout', {
       method: "DELETE",
       headers: {'Content-Type': 'application/json'}
@@ -16,7 +17,7 @@ function Header() {
     .then(() => {
       navigate('/')
       logout()
-    })
+    })}
   }
 
   return (
@@ -53,7 +54,7 @@ function Header() {
           >
           Networks
         </NavLink>
-        <NavLink 
+        {!user || user.error ? "" : <NavLink 
           to="/profile" 
           style={({isActive}) => { return {
             color: isActive ? "white" : "indigo",
@@ -62,7 +63,7 @@ function Header() {
           className={({isActive}) => (isActive ? 'active' : 'link')}
           >
           Profile
-        </NavLink>
+        </NavLink>}
         {!user || user.error ? (<NavLink
           to="/login" 
           style={({isActive}) => { return {

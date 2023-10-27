@@ -1,7 +1,7 @@
 class User < ApplicationRecord
     has_secure_password
     has_one_attached :image
-    validates :username, :password, :password_confirmation, presence: true
+    validates :username, :password, :password_confirmation, :image, presence: true
     validates :username, uniqueness: true
 
     has_many :reviews
