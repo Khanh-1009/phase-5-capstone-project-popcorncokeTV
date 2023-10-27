@@ -428,6 +428,36 @@ Review.create([
         show_id: 6
     },
     {
+        subject: "Heartbreaking drama",
+        review: "This was a breathtaking dramatisation of the horrors and chaos following a nuclear power plant disaster. It was 6 hours spanned over 5 weeks and compulsive viewing. Every programme in this series rattled my conscience in a way that few have in the past. Like so many people, I thought I had a fairly good idea of what happened following this nuclear power plant tragedy in 1986. But, on reflection, after watching this series, I realize I didn't.",
+        rating: 5,
+        user_id: 3,
+        show_id: 7
+    },
+    {
+        subject: "Really Amazing",
+        review: "HBO has developed an arsenal when it comes to mini-series. Created for the small screen by Craig Mazin and loosely based on accounts from the book 'Voices of Chernobyl by Svetlana Alexievich', the show chronicles the behind-the-scenes drama and horror of the infamous 1986 disaster at the Chernobyl Nuclear Power Plant in Ukraine. - Tom Shackleford, Live for Live Music",
+        rating: 5,
+        user_id: 5,
+        show_id: 7
+    },
+    {
+        subject: "Watched several times",
+        review: "Outstanding in every possible way.
+        Terrifying depiction of how the first impulse of authoritarian governments faced with disaster is to cover up and lie as much as they can for as long as they can.
+        Superb acting from EVERYBODY from the starring roles to single line/single scene moments. ",
+        rating: 5,
+        user_id: 14,
+        show_id: 7
+    },
+    {
+        subject: "Good but too much political stuff",
+        review: "The drama is great, but they should focus more on the scientific impact not the political perspective. What the show describle how the Soviet solved the problem was really ridiculous.",
+        rating: 3,
+        user_id: 19,
+        show_id: 7
+    },
+    {
         subject: "Waste your time!",
         review: "Where do I begin, I can't even begin to fathom nor comprehend how this show has such good reviews unless 99 percent of the viewers are either mentally challenged or they were paid to give it praise. I had to agonisingly force my self through this soulless drivel and I was already done with it about 25 minutes into episode 1",
         rating: 1,
@@ -671,7 +701,7 @@ Review.create([
         rating: 5,
         user_id: 11,
         show_id: 21
-    }
+    },
     {
         subject: "One of the best show",
         review: "The Best Crime Drama on TV!
@@ -704,36 +734,6 @@ Review.create([
         rating: 3,
         user_id: 15,
         show_id: 22
-    },
-    {
-        subject: "Heartbreaking drama",
-        review: "This was a breathtaking dramatisation of  the horrors and chaos following a nuclear power plant disaster. It was 6 hours spanned over 5 weeks and compulsive viewing. Every programme in this series rattled my conscience in a way that few have in the past. Like so many people, I thought I had a fairly good idea of what happened following this nuclear power plant tragedy in 1986. But, on reflection, after watching this series, I realize I didn't.",
-        rating: 5,
-        user_id: 3,
-        show_id: 24
-    },
-    {
-        subject: "Really Amazing",
-        review: "HBO has developed an arsenal when it comes to mini-series. Created for the small screen by Craig Mazin and loosely based on accounts from the book 'Voices of Chernobyl by Svetlana Alexievich', the show chronicles the behind-the-scenes drama and horror of the infamous 1986 disaster at the Chernobyl Nuclear Power Plant in Ukraine. - Tom Shackleford, Live for Live Music",
-        rating: 5,
-        user_id: 5,
-        show_id: 24
-    },
-    {
-        subject: "Watched several times",
-        review: "Outstanding in every possible way.
-        Terrifying depiction of how the first impulse of authoritarian governments faced with disaster is to cover up and lie as much as they can for as long as they can.
-        Superb acting from EVERYBODY from the starring roles to single line/single scene moments. ",
-        rating: 5,
-        user_id: 14,
-        show_id: 24
-    },
-    {
-        subject: "Good but too much political stuff",
-        review: "The drama is great, but they should focus more on the scientific impact not the political perspective. What the show describle how the Soviet solved the problem was really ridiculous.",
-        rating: 3,
-        user_id: 19,
-        show_id: 24
     }
 ])
 

@@ -80,7 +80,7 @@ function Signup() {
           onChange={(e) => setPasswordConfirmation(e.target.value)}
         />
         <br/>
-        <label>Avatar Photo <span>(optional)</span></label>
+        <label>Avatar Photo </label>
         <input
           type="file"
           accept="/image/*"
