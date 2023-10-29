@@ -11,9 +11,6 @@ function Home() {
           <p>Ready to enjoy the shows? Create your memembership today.</p>
           <Link to={'/signup'}><button id="get-start">Get Started &#10145;</button></Link>
         </div>
-        <div>
-          <h1>Top-rated Shows</h1>
-        </div>
       </div>
     );
 }

@@ -9,7 +9,8 @@ function Signup() {
   const [errorsList, setErrorsList] = useState([])
   const {signup} = useContext(UserContext)
   const navigate = useNavigate()
-  const [avatarData, setAvatarData] = useState(null)
+  const [avatarData, setAvatarData] = useState({})
+  console.log(avatarData)
 
   function handleSubmit(e){
     e.preventDefault()
@@ -18,7 +19,7 @@ function Signup() {
     formData.append('password', password)
     formData.append('password_confirmation', passwordConfirmation)
     formData.append('image', avatarData)
-
+    
     fetch('/signup', {
       method: 'POST',
       body: formData
@@ -30,19 +31,20 @@ function Signup() {
           setUsername("")
           setPassword("")
           setPasswordConfirmation("")
-          setAvatarData([])
+          setAvatarData({})
           alert('Thanks for signing up! Enjoy and share your experience with us!')
           navigate('/')
         })
       } else {
         res.json().then((err) => {
+          console.log(err.errors)
           setErrorsList(err.errors)
           setTimeout(() => {
             setErrorsList([])
             setUsername("")
             setPassword("")
             setPasswordConfirmation("")
-            setAvatarData([])
+            setAvatarData({})
           }, 4000)
         })
       }
@@ -86,7 +88,6 @@ function Signup() {
           accept="/image/*"
           name="image"
           id="avatar-photo"
-          value={undefined}
           onChange={(e) => setAvatarData(e.target.files[0])}
         />
         <br/>

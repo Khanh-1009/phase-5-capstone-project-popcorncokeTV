@@ -4,7 +4,7 @@ import ReviewEdit from "./ReviewEdit"
 
 
 function Reviews ({showReview, onChangeReview, onDeleteReview}){
-    const {subject, review, rating, id, user_id, username, user_avatar} = showReview
+    const {subject, review, rating, id, user_id, username} = showReview
     const {user} = useContext(UserContext)
     const [isEditing, setEditing] = useState(false)
     const [like, setLike] = useState(false)
