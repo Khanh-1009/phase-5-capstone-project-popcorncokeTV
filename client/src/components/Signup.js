@@ -9,46 +9,50 @@ function Signup() {
   const [errorsList, setErrorsList] = useState([])
   const {signup} = useContext(UserContext)
   const navigate = useNavigate()
-  const [avatarData, setAvatarData] = useState({})
+  const [avatarData, setAvatarData] = useState(null)
   console.log(avatarData)
 
   function handleSubmit(e){
     e.preventDefault()
-    const formData = new FormData()
-    formData.append('username', username)
-    formData.append('password', password)
-    formData.append('password_confirmation', passwordConfirmation)
-    formData.append('image', avatarData)
-    
-    fetch('/signup', {
-      method: 'POST',
-      body: formData
-    })
-    .then((res) => {
-      if (res.ok){
-        res.json().then((user) => {
-          signup(user)
-          setUsername("")
-          setPassword("")
-          setPasswordConfirmation("")
-          setAvatarData({})
-          alert('Thanks for signing up! Enjoy and share your experience with us!')
-          navigate('/')
-        })
-      } else {
-        res.json().then((err) => {
-          console.log(err.errors)
-          setErrorsList(err.errors)
-          setTimeout(() => {
-            setErrorsList([])
+    if (avatarData === null) {
+      alert("Please attach a photo for your sign up")
+    } else {
+      const formData = new FormData()
+      formData.append('username', username)
+      formData.append('password', password)
+      formData.append('password_confirmation', passwordConfirmation)
+      formData.append('image', avatarData)
+      
+      fetch('/signup', {
+        method: 'POST',
+        body: formData
+      })
+      .then((res) => {
+        if (res.ok){
+          res.json().then((user) => {
+            signup(user)
             setUsername("")
             setPassword("")
             setPasswordConfirmation("")
-            setAvatarData({})
-          }, 4000)
-        })
-      }
-    })
+            setAvatarData(null)
+            alert('Thanks for signing up! Enjoy and share your experience with us!')
+            navigate('/')
+          })
+        } else {
+          res.json().then((err) => {
+            console.log(err.errors)
+            setErrorsList(err.errors)
+            setTimeout(() => {
+              setErrorsList([])
+              setUsername("")
+              setPassword("")
+              setPasswordConfirmation("")
+              setAvatarData(null)
+            }, 4000)
+          })
+        }
+      })
+    }
   }
 
   return (
