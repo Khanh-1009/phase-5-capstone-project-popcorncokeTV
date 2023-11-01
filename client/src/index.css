@@ -320,7 +320,7 @@ header h1 {
 }
 
 /*Audience Reviews*/
-#audience-reviews{
+.audience-reviews{
   max-width: 1000px;
   margin-top: 40px;
   margin-inline: auto;

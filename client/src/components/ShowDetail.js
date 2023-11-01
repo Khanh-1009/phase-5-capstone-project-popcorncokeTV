@@ -64,11 +64,12 @@ function ShowDetail(){
           </div>
       </div>
       <ReviewForm onAddReview={handleAddReview}/>
-      <h2 id="audience-reviews">Audience Reviews ({currentShow.reviews_count})</h2>
+      <h2 className="audience-reviews">Audience Reviews ({currentShow.reviews_count})</h2>
+      {currentShow.reviews_count === 0 ? <h2 className="audience-reviews">Be the first one to comment</h2> : ""}
       {currentShow.reviews.map((showReview) => (
-        <Reviews key={showReview.id} showReview={showReview} 
-        onChangeReview={handleChangeReview}
-        onDeleteReview={handleDeleteReview}/>
+      <Reviews key={showReview.id} showReview={showReview} 
+      onChangeReview={handleChangeReview}
+      onDeleteReview={handleDeleteReview}/>
       ))}
     </div>
     )

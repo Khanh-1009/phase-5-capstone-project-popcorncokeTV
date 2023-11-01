@@ -14,7 +14,8 @@ function ShowList({show}) {
     <div className="card">
     <h2>{name}</h2>
     <img src={poster_url} alt={name} className="show-avatar"/>
-    <p>{network_name} | {year} | Rating: {average_rating}/5&#11088;</p>
+    {average_rating === null ? <p>{network_name} | {year} | Rating: N/A</p> : 
+    <p>{network_name} | {year} | Rating: {average_rating}/5&#11088;</p>} 
     {!user || user.error ? <Link to={'/login'}>
       <button className="show-button" onClick={handleClickMessage}>Watch Now</button></Link> : 
     <Link to={`/shows/${id}`}>
