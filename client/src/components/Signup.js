@@ -36,7 +36,7 @@ function Signup() {
             setPasswordConfirmation("")
             setAvatarData(null)
             alert('Thanks for signing up! Enjoy and share your experience with us!')
-            navigate('/')
+            navigate('/shows')
           })
         } else {
           res.json().then((err) => {

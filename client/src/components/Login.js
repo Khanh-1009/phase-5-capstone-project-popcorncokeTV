@@ -28,7 +28,7 @@ function Login() {
           setUsername("")
           setPassword("")
           alert("You have successfully logged in. Welcome back!")
-          navigate('/')
+          navigate('/shows')
         })
       } else {
         res.json().then((err) => {

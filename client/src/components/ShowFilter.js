@@ -26,7 +26,6 @@ function ShowFilter ({onNetWorkChange, onSearchChange, filterBy}){
                     <option value="Disney">Disney</option>
                     <option value="NBC">NBC</option>
                 </select>
-            <button type="submit">Search</button>
             </form>
         </div>
     )

@@ -18,8 +18,4 @@ class Show < ApplicationRecord
         all_rates = reviews.map {|review| review.rating}
         (all_rates.sum.to_f / all_rates.length).round(1)
     end
-
-    def self.by_rates
-        self.all.order(average_rating: :desc)
-    end
 end
