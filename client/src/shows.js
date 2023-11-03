@@ -9,7 +9,7 @@ function ShowsProvider({children}){
         fetch("/shows")
         .then(res => res.json())
         .then(data => setShows(data))
-      }, [shows])
+      }, [])
 
     return (
         <ShowContext.Provider value={{shows, setShows}}>

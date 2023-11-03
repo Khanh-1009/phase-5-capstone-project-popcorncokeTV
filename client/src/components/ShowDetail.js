@@ -7,7 +7,10 @@ import Reviews from "./Reviews";
 
 function ShowDetail(){
     const {shows, setShows} = useContext(ShowContext)
-    const [currentShow, setCurrentShow] = useState({reviews: []})
+    const [currentShow, setCurrentShow] = useState({
+      average_rating: "", 
+      reviews_count: "", 
+      reviews: []})
     const params = useParams()
     const showID = parseInt(params.id)
 
@@ -19,19 +22,22 @@ function ShowDetail(){
     }, [shows])
 
     function handleAddReview(newReview){
-      const addNewReview = [newReview, ...currentShow.reviews]
-      currentShow.reviews = addNewReview
-      const updatedShowAfterAddedReview = shows.map(show => show.id === currentShow.show_id ? currentShow : show)
+      const updateReviews = [newReview, ...currentShow.reviews]
+      const showCopy = {...currentShow, reviews: updateReviews, average_rating: newReview.show.average_rating,
+      reviews_count: newReview.show.reviews_count}
+      console.log(newReview)
+      const updatedShowAfterAddedReview = shows.map(show => show.id === showCopy.id ? showCopy : show)
       setShows(updatedShowAfterAddedReview)
     }
 
     function handleDeleteReview(removeReview){
       const updateAfterRemove = currentShow.reviews.filter((review) => review.id !== removeReview.id)
-      currentShow.reviews = updateAfterRemove
-      const updatedShowAfterRemoveReview = shows.map((show) => show.id === currentShow.show_id ? currentShow : show)
+      const showCopy = {...currentShow, reviews: updateAfterRemove, average_rating: removeReview.show.average_rating,
+      reviews_count: removeReview.show.reviews_count}
+      const updatedShowAfterRemoveReview = shows.map((show) => show.id === showCopy.id ? showCopy : show)
       setShows(updatedShowAfterRemoveReview)
     }
-  
+
     function handleChangeReview(updatedReview){
       const updateReviewOfShow = currentShow.reviews.map((review) => {
         if (review.id === updatedReview.id){
@@ -40,8 +46,9 @@ function ShowDetail(){
           return review
         }
       })
-      currentShow.reviews = updateReviewOfShow
-      const updatedShowAfterEditReview = shows.map(show => show.id === currentShow.show_id ? currentShow : show)
+      const showCopy = {...currentShow, reviews: updateReviewOfShow, average_rating: updatedReview.show.average_rating,
+      reviews_count: updatedReview.show.reviews_count} 
+      const updatedShowAfterEditReview = shows.map(show => show.id === showCopy.id ? showCopy : show)
       setShows(updatedShowAfterEditReview)
     }
 

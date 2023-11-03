@@ -23,14 +23,15 @@ function Reviews ({showReview, onChangeReview, onDeleteReview}){
             fetch(`/reviews/${id}`, {
                 method: "DELETE",
             })
-            .then(res => {
-                if (res.ok) {
-                    onDeleteReview(showReview)
-                }
-            })
+            .then(res => res.json())
+            .then((deletedReview) => onDeleteReview(deletedReview))
         }
     }
-
+    // {
+    //     if (res.ok) {
+    //         onDeleteReview(showReview)
+    //     }
+    // }
      if (user.id === user_id) {
         if (isEditing) {
             return (<ReviewEdit showReview={showReview} onUpdateReview={editingReview}/>)

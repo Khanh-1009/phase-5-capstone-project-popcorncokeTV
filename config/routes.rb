@@ -7,10 +7,10 @@ Rails.application.routes.draw do
   post '/signup', to: 'users#create'
   get '/me', to: 'users#show'
 
-  resources :networks
-  resources :shows
-  resources :reviews
-  resources :users
+  resources :networks, only: [:index]
+  resources :shows, only: [:index]
+  resources :reviews, only: [:index, :create, :update, :destroy]
+  resources :users, only: [:index]
   
   get "*path", to: "fallback#index", constraints: ->(req) { !req.xhr? && req.format.html? }
 end

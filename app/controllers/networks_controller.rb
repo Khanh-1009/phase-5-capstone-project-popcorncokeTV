@@ -1,5 +1,5 @@
 class NetworksController < ApplicationController
-    skip_before_action :authorize, only: [:index]
+    skip_before_action :authorize
 
     def index
         networks = Network.all 
