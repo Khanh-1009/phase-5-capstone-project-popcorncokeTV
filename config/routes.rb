@@ -6,9 +6,11 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#destroy'
   post '/signup', to: 'users#create'
   get '/me', to: 'users#show'
+  get '/top-rated', to: 'shows#top_rated'
+  get '/most-popular', to: 'shows#most_popular'
 
   resources :networks, only: [:index]
-  resources :shows, only: [:index]
+  resources :shows
   resources :reviews, only: [:index, :create, :update, :destroy]
   resources :users, only: [:index]
   

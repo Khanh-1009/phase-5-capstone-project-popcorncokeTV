@@ -25,7 +25,6 @@ function ShowDetail(){
       const updateReviews = [newReview, ...currentShow.reviews]
       const showCopy = {...currentShow, reviews: updateReviews, average_rating: newReview.show.average_rating,
       reviews_count: newReview.show.reviews_count}
-      console.log(newReview)
       const updatedShowAfterAddedReview = shows.map(show => show.id === showCopy.id ? showCopy : show)
       setShows(updatedShowAfterAddedReview)
     }

@@ -6,4 +6,8 @@ class User < ApplicationRecord
 
     has_many :reviews
     has_many :shows, through: :reviews
+
+    def user_reviews_count
+        reviews.count
+    end
 end

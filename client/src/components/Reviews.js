@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { UserContext } from "../user";
 import ReviewEdit from "./ReviewEdit"
-
+import {Link} from "react-router-dom"
 
 function Reviews ({showReview, onChangeReview, onDeleteReview}){
     const {subject, review, rating, id, user_id, username} = showReview
@@ -27,12 +27,8 @@ function Reviews ({showReview, onChangeReview, onDeleteReview}){
             .then((deletedReview) => onDeleteReview(deletedReview))
         }
     }
-    // {
-    //     if (res.ok) {
-    //         onDeleteReview(showReview)
-    //     }
-    // }
-     if (user.id === user_id) {
+
+    if (user.id === user_id) {
         if (isEditing) {
             return (<ReviewEdit showReview={showReview} onUpdateReview={editingReview}/>)
         } else {
@@ -41,7 +37,7 @@ function Reviews ({showReview, onChangeReview, onDeleteReview}){
                     <div className="each-review">
                         <h3>{subject} - {rating} &#11088;s</h3>
                         <p>{review}</p>
-                        <p style={{display:"inline-block"}}><i> Posted by {username}</i></p>
+                        <p style={{display:"inline-block"}}><i> Posted by <Link to={'/profile'} style={{color: "black"}}>{username}</Link></i></p>
                         <button className="btn" onClick={handleDeleteReview}>Delete Post</button>
                         <button className="btn" onClick={() => setEditing((isEditing) => !isEditing)}>Edit Post</button>
                     </div>
@@ -55,7 +51,7 @@ function Reviews ({showReview, onChangeReview, onDeleteReview}){
                 <div className="each-review">
                     <h3>{subject} - {rating} &#11088;s</h3>
                     <p>{review}</p>
-                    <p style={{display:"inline-block"}}><i> Posted by {username}</i></p>
+                    <p style={{display:"inline-block"}}><i> Posted by <Link to={`/profile/${user_id}`} style={{color: "black"}}>{username}</Link></i></p>
                     {like ? <button className="btn" onClick={handleLike}>Liked &#128077;</button> : 
                     <button className="btn" onClick={handleLike}>Like</button>}
                     

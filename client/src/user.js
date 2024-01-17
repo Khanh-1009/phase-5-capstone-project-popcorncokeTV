@@ -4,6 +4,7 @@ const UserContext = React.createContext()
 
 function UserProvider({children}){
     const [user, setUser] = useState(null)
+    const [allUsers, setAllUsers] = useState([])
 
     useEffect(() => {
         fetch('/me')
@@ -11,7 +12,13 @@ function UserProvider({children}){
         .then(data => setUser(data))
     }, [])
 
-    console.log(user)
+    useEffect(() => {
+        fetch('/users')
+        .then(res => res.json())
+        .then(data => setAllUsers(data))
+    }, [])
+
+    console.log(allUsers)
 
     function login(loggedInUser){
         setUser(loggedInUser)
@@ -25,12 +32,8 @@ function UserProvider({children}){
         setUser(newUser)
     }
 
-    function handleUpdatePhoto(avatarUpdated){
-        setUser(avatarUpdated)
-    }
-
     return (
-        <UserContext.Provider value={{user, login, logout, signup, handleUpdatePhoto}}>
+        <UserContext.Provider value={{user, login, logout, signup, allUsers}}>
             {children}
         </UserContext.Provider>
     )
