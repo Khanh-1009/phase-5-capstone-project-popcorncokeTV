@@ -52,23 +52,23 @@ function ShowDetail(){
     }
 
     return (
-        <div>
-          <div className="each-show">
-            <div className="poster">
-              <img src={currentShow.poster_url} alt={currentShow.name + " Poster"} />
-            </div>
-            <div className="showdetail">
-              <h2>{currentShow.name}</h2>
-              <p>
-                {currentShow.genre} | {currentShow.year} 
-              </p>
-              <p>
-                Seasons: {currentShow.seasons} | Episodes: {currentShow.episodes} 
-              </p>
-              <p>Original Network: {currentShow.network_name}</p>
+      <div>
+        <div className="each-show">
+          <div className="poster">
+            <img src={currentShow.poster_url} alt={currentShow.name + " Poster"} />
+          </div>
+          <div className="showdetail">
+            <h2>{currentShow.name}</h2>
+            <p>
+              {currentShow.genre} | {currentShow.year} 
+            </p>
+            <p>
+              Seasons: {currentShow.seasons} | Episodes: {currentShow.episodes} 
+            </p>
+            <p>Original Network: {currentShow.network_name}</p>
             <p>{currentShow.summary}</p>
           </div>
-      </div>
+        </div>
       <ReviewForm onAddReview={handleAddReview}/>
       <h2 className="audience-reviews">Audience Reviews ({currentShow.reviews_count})</h2>
       {currentShow.reviews_count === 0 ? <h2 className="audience-reviews">Be the first one to comment</h2> : ""}

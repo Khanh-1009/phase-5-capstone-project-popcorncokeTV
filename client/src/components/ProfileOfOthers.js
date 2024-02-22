@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react"
+import React, { useContext } from "react"
 import { UserContext } from "../user";
 import ProfileReviews from "./ProfileReviews";
 import { useParams } from "react-router-dom";
@@ -6,17 +6,10 @@ import { useParams } from "react-router-dom";
 
 function ProfileOfOthers (){
     const {allUsers} = useContext(UserContext)
-    const [chosenUser, setChosenUser] = useState({reviews: []})
     const params = useParams()
     const userID = parseInt(params.id)
-
-    useEffect(() => {
-        if (allUsers.length > 0) {
-            const user = allUsers.find(( {id}) => id === userID)
-            setChosenUser(user)
-        }
-    }, [allUsers])
-
+    const chosenUser = allUsers.length > 0 ? 
+    allUsers.find(({id}) => id === userID) : ""
 
     return (
         <div className="app">

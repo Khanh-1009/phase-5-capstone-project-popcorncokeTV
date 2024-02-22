@@ -18,7 +18,7 @@ function UserProvider({children}){
         .then(data => setAllUsers(data))
     }, [])
 
-    console.log(allUsers)
+    console.log(user)
 
     function login(loggedInUser){
         setUser(loggedInUser)
